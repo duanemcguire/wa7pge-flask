@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>POTA Activations</h2>
+<article>
+
+<ul>
+    {% for activation in activations %}
+        <li><a href="/{{activation['post'].path}}">{{activation['state']}} {{activation['post'].title}}</a></li>
+    {% endfor %}
+</ul>
+</article>        
+
+{% endblock %}

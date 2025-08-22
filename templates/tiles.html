@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{h2}}</h2>
+<div class="container d-md-flex align-items-stretch mt-3"><div><div>
+{% for post in posts %}
+  {% include "tile.html" %}
+{% endfor %}        
+</div></div></div>
+
+{% endblock %}

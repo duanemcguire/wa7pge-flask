@@ -1,0 +1,13 @@
+
+<b>Categories</b><BR/>
+<span>
+    <div class="tcloud sticky-top">
+    {% for category in categories %}    
+    <p >
+        <a href="/category/{{category['slug']}}/">
+        {{category['name']}}
+        </a>
+    </p>
+    {% endfor %}
+    </div>
+</span>

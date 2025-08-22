@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>CW</h2>
+<article>
+<ul>
+    {% for post in posts %}
+        <li><a href="/{{post.path}}">{{post.title}}</a>  </li>
+    {% endfor %}
+</ul>    
+{{post_index.html|safe}}
+</article>        
+{% include 'commentario.html' %}
+
+{% endblock %}

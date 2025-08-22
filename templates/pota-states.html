@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>POTA Hunted States</h2>
+<article>
+
+<ul>
+    {% for state in states %}
+        <li><a href="/POTA/Hunted/{{state}}">{{state}} ({{state_counts[state]}})</a></li>
+    {% endfor %}
+</ul>
+</article>        
+
+{% endblock %}

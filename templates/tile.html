@@ -1,0 +1,15 @@
+    <div  id="article-content" style="display: inline-block">
+        <div class="blog-card card" @click="goItem">
+          {% if post.img is defined %}
+            <a href="/{{post.path}}/">
+              <img  class="card-img-top " style-"max-width: 100%" src="{{post.img}}"  alt="{{post.title}}">
+            </a>
+          {% endif %}  
+            <div class="card-body" @click="goItem">
+              <a href="/{{post.path}}/">
+                <div class="card-title">{{post.title}} </div>
+              </a>
+              <div class="blog-card-excerpt" >{{post.excrpt}}</div>
+            </div>
+        </div>
+    </div>

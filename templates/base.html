@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width initial-scale=1' />
+  {% if noindex is defined %}
+    <meta name="robots" content="noindex">
+  {% endif %}  
+  {% if page is defined %}
+    <title>{{page.meta['title']}}</title>
+  {% else %}
+    <title>WA7PGE, Amateur Ham Radio</title>
+  {% endif %}  
+
+
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  {% if page is defined %}  
+  <link rel="canonical" href="{{page.canonical}}" /> 
+  {% endif %}
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+  {% if page is defined  and page.img is defined and page.img %}
+    <link rel="img_src" href="{{page.img}}" /> 
+    <meta property="og:image" content="{{page.img}}" />
+  {% endif %}  
+
+
+  <style>
+    #mobile-topnav {
+      display: none
+    }
+
+    #header-piano {
+      padding-bottom: 30px;
+    }
+
+    article img {
+          max-width: 800px
+        }
+
+        article div {
+          max-width: 824px
+        }
+
+
+
+    @media screen and (max-width: 800px) {
+      #not-mobile-topnav {
+        display: none
+      }
+
+      #header-piano {
+        display: none;
+      }
+
+      #mobile-topnav {
+        display: block
+      }
+
+
+
+      @media screen and (max-width:800px) {
+        article img {
+          max-width: 320px
+        }
+
+        article div {
+          max-width: 324px
+        }
+      }
+    }
+
+    .blog-card {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      float: left;
+      height: 25rem;
+      width: 20rem;
+      overflow: hidden;
+      background-color: #eeeeee;
+      border: 2px solid black;
+    }
+
+    .blog-card a {
+      text-decoration: none;
+      color: black
+    }
+
+    .blog-card:hover {
+      width: 21rem;
+    }
+
+    .blog-card a:hover {
+      color: blue;
+    }
+
+    .blog-card-excerpt {
+      width: 18rem;
+      height: 5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+
+    .blog-card img {
+      height: 240px;
+      width: auto;
+      overflow: hidden;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      height: 1.5rem;
+      overflow: hidden;
+    }
+
+    .tcloud a {
+      line-height: 0.8;
+      font-size: 0.7em;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      color: #595959;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .tcloud p {
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+
+    #morecategories {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: 800px) {
+      #morecategories {
+        float: right;
+        position: relative;
+        top: -40px;
+        margin-bottom: 0px;
+      }
+
+      .tcloud {
+        height: 110px;
+        width: 150px;
+        border: 1px solid gray;
+        overflow: auto;
+      }
+
+      .tcloud p {
+        display: block;
+        margin-bottom: 0px;
+        margin-left: 5px;
+      }
+
+      .tcloud a {
+        line-height: 1;
+        font-size: 1em;
+        padding: 0;
+        text-transform: none;
+        color: #333333;
+        border: none;
+        display: inline-block;
+        margin: 0px;
+
+      }
+    }
+
+    .topnav a {
+      line-height: 1.2;
+      font-size: 0.8em;
+      padding: 3px;
+      text-transform: uppercase;
+      white-space: pre;
+      color: white;
+      display: inline-block;
+      border: 1px solid gray;
+      margin-right: 5px;
+      background-color: #3d3d3d;
+      margin-bottom: 5px;
+    }
+  </style>
+
+  <script>
+    function topNavFunc() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+</head>
+
+<body>
+  <div style="background-color: black" class="container align-items-stretch">
+    <div class="d-flex bd-highlight align-items-end">
+      <div style="float:left">
+        <img src="/static/ham-icon.jpg">
+      </div>
+      <div class="p-2 flex-fill bd-highlight">
+        
+        <a style="color:white; text-decoration:none;" href="/">
+          <h1>WA7PGE</h1>
+        </a>
+        <div style="color:white" class="p-1"><i>Duane's ham radio fun</i></div>
+      </div>
+    </div>
+
+    <div class="topnav pt-3" id="myTopnav">
+      <a href="/CW/">CW</a>
+      <a href="/Equipment/">Equipment</a>
+      <a href="/Antennas/">Antennas</a>
+      <a href="/Thoughts/">Thoughts</a>
+      <a href="/POTA/">POTA</a>
+      <a href="/Search">Search</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    {{breadcrumbs|safe}}
+    <article>
+      {% block content %}
+
+      {% endblock %}
+    </article>
+  </div>
+  <div class="container d-md-flex align-items-stretch">
+    <div style="text-align:center; width: 100%" class="p-4 p-md-2 pt-5">
+      <hr>
+      © 2025 Duane McGuire
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

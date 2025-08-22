@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> {{ page.title }} </h1>
+<b>Date: </b> {{page.date[:10]}}<BR><BR>
+{{ page.html|safe }}
+
+{% if page.tags is defined and page.tags %}
+    <div>
+        Related posts tagged as:
+        {% for tag in page.tags %}
+            <p class="tcloud" >
+                <a href="/tag/{{tag}}/">{{tag}}</a>
+            </p>
+        {% endfor %}
+    </div>
+{% endif %}
+{% include 'commentario.html' %}
+{% endblock %}

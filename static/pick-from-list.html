@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Named Random Picker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea, input[type="text"] { width: 100%; margin-top: 5px; margin-bottom: 10px; }
+    textarea { height: 150px; }
+    .buttons { margin-top: 10px; }
+    .random-item {
+      font-weight: bold;
+      color: darkblue;
+      margin-top: 15px;
+      padding: 10px;
+      border: 2px dashed #888;
+      background: #f9f9f9;
+      border-radius: 6px;
+    }
+    ul { margin-top: 10px; }
+    h3.named-title { margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+  <h2 id="pageHeading">Create and Use a Named List</h2>
+
+  <label for="listName">List Name:</label>
+  <input type="text" id="listName" placeholder="e.g., Student Names, Tasks, Topics" oninput="updateListTitle()">
+
+  <label for="inputArea">Enter Line-Delimited Items:</label>
+  <textarea id="inputArea" placeholder="Enter one item per line..."></textarea>
+
+  <div class="buttons">
+    <button onclick="randomizeList()">Randomize List</button>
+    <button onclick="pickOne()">Pick One Random Item</button>
+    <button onclick="alphabetizeList()">Alphabetize List</button>
+    <BR><BR> 
+    <input type="checkbox" id="clippy"><label for="clippy">Copy to clipboard when picking one</label>
+  </div>
+
+  <h3>Picked Item:</h3>
+  <div class="random-item" id="randomItem">None picked yet.</div>
+
+  <h3 class="named-title" id="listTitle">Remaining Items:</h3>
+  <ul id="outputList"></ul>
+
+  <script>
+    let fullList = [];
+    let remainingItems = [];
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function getInputLines() {
+      const input = document.getElementById("inputArea").value;
+      return input
+        .split('\n')
+        .map(line => line.trim())
+        .filter(line => line !== "");
+    }
+
+    function updateListTitle() {
+      const name = document.getElementById("listName").value.trim();
+      const title = document.getElementById("listTitle");
+      const pageTitle = document.querySelector("title");
+      const pageHeading = document.getElementById("pageHeading");
+
+      title.textContent = name ? `Remaining Items in "${name}":` : "Remaining Items:";
+      pageTitle.textContent = name ? `${name} - Random Picker` : "Named Random Picker";
+      pageHeading.textContent = name || "Create and Use a Named List";
+    }
+
+    function randomizeList() {
+      fullList = getInputLines();
+      if (fullList.length === 0) {
+        alert("Please enter at least one item.");
+        return;
+      }
+      updateListTitle();
+      remainingItems = shuffleArray([...fullList]);
+      updateRemainingListDisplay();
+      document.getElementById("randomItem").textContent = "None picked yet.";
+    }
+
+    function pickOne() {
+      if (remainingItems.length === 0) {
+        if (fullList.length === 0) {
+          fullList = getInputLines();
+          if (fullList.length === 0) {
+            document.getElementById("randomItem").textContent = "No items to pick from.";
+            return;
+          }
+        }
+        remainingItems = shuffleArray([...fullList]);
+        alert("All items have been picked. The list has been reset and reshuffled.");
+      }
+
+      const item = remainingItems.pop();
+      updateRemainingListDisplay();
+      displayPickedItem(item);
+      copyToClipboard(item);
+    }
+
+    function alphabetizeList() {
+      remainingItems.sort((a, b) => a.localeCompare(b));
+      updateRemainingListDisplay();
+    }
+
+    function updateRemainingListDisplay() {
+      const outputList = document.getElementById("outputList");
+      outputList.innerHTML = "";
+      remainingItems.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        outputList.appendChild(li);
+      });
+    }
+
+    function displayPickedItem(item) {
+      const itemDisplay = document.getElementById("randomItem");
+      itemDisplay.textContent = item;
+    }
+
+    function copyToClipboard(text) {
+      const checkbox = document.getElementById('clippy'); 
+      if (checkbox.checked){  
+	      navigator.clipboard.writeText(text).then(() => {
+		console.log("Copied to clipboard:", text);
+	      }).catch(err => {
+		console.error("Clipboard copy failed:", err);
+	      });
+      }	      
+    }
+  </script>
+
+</body>
+</html>
+
