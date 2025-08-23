@@ -1,0 +1,4 @@
+{
+    "qiniu.isSaveLocal": true,
+    "qiniu.localPath": "~/code/wa7pge-flask/static"
+}

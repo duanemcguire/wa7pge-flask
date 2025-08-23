@@ -21,5 +21,4 @@ https://gastateparks.org/JarrellPlantation
 
 #### My Hunter Log
 14:41:34    2025-02-09    [AA5JF](https://qrz.com/db/AA5JF)    359    459    GA    14.0335    20m    CW    [US-3720](https://pota.app/#/park/US-3720)
-
 14:41    2025-02-09    [AA5JF](https://qrz.com/db/AA5JF)    359    459    GA    14.0335    20m    CW    [US-3720](https://pota.app/#/park/US-3720)
