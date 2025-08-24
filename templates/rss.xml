@@ -10,10 +10,10 @@
         {% for post in posts %}
             <item>
                 <title><![CDATA[{{post.title}}]]></title>
-                <link>https://wa7pge.com/{{post.path}}</link>
+                <link>https://wa7pge.com/{{post.path.lower()}}</link>
                 <pubDate>{{post.pub_date}}</pubDate>
                 <description><![CDATA[{{post.excrpt}}]]></description>
-                {% if post.img %}<enclosure url="https://wa7pge.com{{post.img}}" length="0" type="image/jpg"/>{% endif %}    
+                {% if post.img %}<enclosure url="https://wa7pge.com{{post.img.lower()}}" length="0" type="image/jpg"/>{% endif %}    
             </item>
         {% endfor %}
     </channel>

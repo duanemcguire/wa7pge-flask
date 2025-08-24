@@ -15,4 +15,4 @@ Eagle Lake Wildlife Area is a 960-acre high quality natural marsh within a 2,000
 
 ## My Hunter Log
 
-2024-07-16  01:29 KOWOI 20m CW
+2024-07-16  01:29 K0WOI 20m CW

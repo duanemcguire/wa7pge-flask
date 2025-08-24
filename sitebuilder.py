@@ -15,6 +15,8 @@ pages = FlatPages(app)
 # check data
 err = False
 for p in pages:
+#    print(p.path)
+#    print(p.meta)
     if type(p.meta['date']) is not str:
         err = True 
         print (f"Bad date string: {p.path} {type(p.meta['date'])}")

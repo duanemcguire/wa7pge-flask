@@ -2,8 +2,18 @@
 spc: IA
 date: '2025-07-20'
 title: US-2292 Gull Point State Park
+img: /static/US-2292.t.png
+---
 
-[POTA Park Info](https://pota.app/#/park/US-2292)
+
+
+[US-2292](https://pota.app/#/park/US-2292)
+
+![](/static/US-2292map.png)
+
+A focal point in the Great Lakes region is beautiful Gull Point State Park, established in 1933 and home to the largest CCC-era lodge in the park system. Gull Point provides a pleasing, shaded setting on West Okoboji Lake with numerous outdoor recreation amenities.
+
+![](/static/US-2292.png)
 
 #### My Hunter Log
 
