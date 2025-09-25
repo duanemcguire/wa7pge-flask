@@ -17,3 +17,4 @@ The park features a large 4,500-acre (18 km2) reservoir on the Pecos River, crea
 20:47:00    2024-12-17    [WI0S](https://qrz.com/db/WI0S)    599    599    NM    14.0615    20m    CW    [US-2717](https://pota.app/#/park/US-2717)
 
 17:07    2025-04-08    [WI0S](https://qrz.com/db/WI0S)    599    599    NM    14.0624    20m    CW    [US-2717](https://pota.app/#/park/US-2717)
+<BR>17:07	2025-04-08	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0624	20m	CW	[US-2717](https://pota.app/#/park/US-2717)

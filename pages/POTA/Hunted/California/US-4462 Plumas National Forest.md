@@ -11,3 +11,4 @@ title: US-4462 Plumas National Forest
 
 #### My Hunter Log
 21:26    2025-03-07    [AE7I](https://qrz.com/db/AE7I)    599    599    CA    14.059    20m    CW    [US-4462](https://pota.app/#/park/US-4462)
+<BR>21:26	2025-03-07	[AE7I](https://qrz.com/db/AE7I)	599	599	CA	14.059	20m	CW	[US-4462](https://pota.app/#/park/US-4462)

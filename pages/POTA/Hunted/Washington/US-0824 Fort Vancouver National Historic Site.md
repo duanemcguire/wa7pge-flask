@@ -17,3 +17,4 @@ Located on the north bank of the Columbia River, in sight of snowy mountain peak
 
 #### My Hunter Log
 18:19:07    2025-01-04    KD7QOW    599    599        14.060    20m    CW    US-0824
+<BR>21:19	2025-03-09	[KD7QOW](https://qrz.com/db/KD7QOW)	599	599	WA	14.0585	20m	CW	[US-0824](https://pota.app/#/park/US-0824)

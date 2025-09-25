@@ -12,3 +12,4 @@ https://www.parks.ca.gov/?page_id=463
 
 #### My Hunter Log
 21:02    2025-03-09    [AE6Z](https://qrz.com/db/AE6Z)    599    599    CA    14.053    20m    CW    [US-1128](https://pota.app/#/park/US-1128)
+<BR>21:02	2025-03-09	[AE6Z](https://qrz.com/db/AE6Z)	599	599	CA	14.053	20m	CW	[US-1128](https://pota.app/#/park/US-1128)

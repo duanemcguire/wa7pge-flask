@@ -19,3 +19,4 @@ https://www.wildlifedepartment.com/hunting/wma/northeast/arcadia-cea
 
 16:`0    2025-01-16    [N5ILQ](https://qrz.com/db/N5ILQ)    599    599    OK    14.053    20m    CW    US-7689
 18:30    2025-04-07    [N5ILQ](https://qrz.com/db/N5ILQ)    599    599    OK    14.043    20m    CW    [US-7689](https://pota.app/#/park/US-7689)
+<BR>18:30	2025-04-07	[N5ILQ](https://qrz.com/db/N5ILQ)	599	599	OK	14.043	20m	CW	[US-7689](https://pota.app/#/park/US-7689)

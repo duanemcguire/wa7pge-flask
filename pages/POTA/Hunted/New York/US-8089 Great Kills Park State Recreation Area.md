@@ -9,3 +9,4 @@ title: US-8089 Great Kills Park State Recreation Area
 
 #### My Hunter Log
 22:16    2025-04-05    [WI2X](https://qrz.com/db/WI2X)    339    339    NY    14.0589    20m    CW    [US-8089](https://pota.app/#/park/US-8089)
+<BR>22:16	2025-04-05	[WI2X](https://qrz.com/db/WI2X)	339	339	NY	14.0589	20m	CW	[US-8089](https://pota.app/#/park/US-8089)

@@ -13,3 +13,4 @@ map: https://files.dnr.state.mn.us/maps/state_trails/central_lakes.pdf
 
 #### My Hunter Log
 20:24    2025-04-20    [W1CDN](https://qrz.com/db/W1CDN)    339    559    MN    14.063    20m    CW    [US-9389](https://pota.app/#/park/US-9389)
+<BR>20:24	2025-04-20	[W1CDN](https://qrz.com/db/W1CDN)	339	559	MN	14.063	20m	CW	[US-9389](https://pota.app/#/park/US-9389)

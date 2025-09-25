@@ -2,6 +2,7 @@
 spc: MN
 date: '2024-03-09T16:18:17'
 title: K-7145 US-MN Minnesota Valley State Recreation Area
+img: /static/pasted_image_0100.png
 ---
 
 [Minnesota DNR](https://www.dnr.state.mn.us/state_parks/park.html?id=sra00304#information)

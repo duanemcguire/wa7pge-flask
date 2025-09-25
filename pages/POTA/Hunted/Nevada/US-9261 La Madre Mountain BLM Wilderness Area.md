@@ -19,3 +19,4 @@ https://wilderness.net/visit-wilderness/?ID=304
 
 #### My Hunter Log
 20:54    2025-02-23    [W9FMI](https://qrz.com/db/W9FMI)    599    599    NV    14.052    20m    CW    [US-9261](https://pota.app/#/park/US-9261)
+<BR>20:54	2025-02-23	[W9FMI](https://qrz.com/db/W9FMI)	599	599	NV	14.052	20m	CW	[US-9261](https://pota.app/#/park/US-9261)

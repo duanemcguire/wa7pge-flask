@@ -13,3 +13,4 @@ https://parks.lacounty.gov/castaic-lake-state-recreation-area/
 
 #### My Hunter Log
 23:19    2025-02-16    [KN6STX](https://qrz.com/db/KN6STX)    59    59    CA    14.295    20m    SSB    [US-3416](https://pota.app/#/park/US-3416)
+<BR>23:19	2025-02-16	[KN6STX](https://qrz.com/db/KN6STX)	59	59	CA	14.295	20m	SSB	[US-3416](https://pota.app/#/park/US-3416)

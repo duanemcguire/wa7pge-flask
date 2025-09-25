@@ -9,3 +9,4 @@ title: US-4460 Mendocino National Forest
 
 #### My Hunter Log
 18:03    2025-06-21    [KN6BAZ](https://qrz.com/db/KN6BAZ)    599    599    CA    14.0625    20m    CW    [US-4460](https://pota.app/#/park/US-4460)
+<BR>18:03	2025-06-21	[KN6BAZ](https://qrz.com/db/KN6BAZ)	599	599	CA	14.0625	20m	CW	[US-4460](https://pota.app/#/park/US-4460)

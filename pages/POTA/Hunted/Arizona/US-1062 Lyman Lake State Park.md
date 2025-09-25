@@ -16,3 +16,5 @@ https://azstateparks.com/lyman-lake/
 
 #### My Hunter Log
 02:07    2025-04-04    [WI0S](https://qrz.com/db/WI0S)    599    599    AZ    7.0588    40m    CW    [US-1062](https://pota.app/#/park/US-1062)
+
+<BR>02:07	2025-04-04	[WI0S](https://qrz.com/db/WI0S)	599	599	AZ	7.0588	40m	CW	[US-1062](https://pota.app/#/park/US-1062)

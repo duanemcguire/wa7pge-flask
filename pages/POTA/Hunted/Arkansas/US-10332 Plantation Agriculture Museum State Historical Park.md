@@ -2,7 +2,7 @@
 spc: AR
 date: '2025-08-21'
 title: US-10332 Plantation Agriculture Museum State Historical Park
-img: /static/US-10332.t.png
+img: /static/US-1032.png
 ---
 [US-10332](https://pota.app/#/park/US-10332)
 

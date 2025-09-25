@@ -3,7 +3,7 @@ spc: WA
 date: '2025-07-20'
 title: US-12528 West Rocky Prairie State Wildlife Area
 
-[POTA Park Info](https://pota.app/#/park/US-12528)
+[US-12528](https://pota.app/#/park/US-12528)
 
 #### My Hunter Log
 

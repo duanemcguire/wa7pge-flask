@@ -9,3 +9,4 @@ title: US-11230 Hallie Marsh State Wildlife Area
 
 #### My Hunter Log
 22:30    2025-04-05    [KZ9V](https://qrz.com/db/KZ9V)    599    599    WI    14.056    20m    CW    [US-11230](https://pota.app/#/park/US-11230)
+<BR>22:30	2025-04-05	[KZ9V](https://qrz.com/db/KZ9V)	599	599	WI	14.056	20m	CW	[US-11230](https://pota.app/#/park/US-11230)

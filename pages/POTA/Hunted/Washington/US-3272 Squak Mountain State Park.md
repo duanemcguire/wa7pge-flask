@@ -13,3 +13,4 @@ Day-use park with 1,500+ acres of forest lands, plus trails for hikers & horseba
 
 #### My Hunter Log
 20:57    2025-04-06    [NA7DO](https://qrz.com/db/NA7DO)    599    599    WA    14.043    20m    CW    [US-3272](https://pota.app/#/park/US-3272)
+<BR>20:57	2025-04-06	[NA7DO](https://qrz.com/db/NA7DO)	599	599	WA	14.043	20m	CW	[US-3272](https://pota.app/#/park/US-3272)

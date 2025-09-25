@@ -3,7 +3,7 @@ spc: OR
 date: '2025-07-13'
 title: US-3220 Leadbetter Point State Park
 
-[POTA Park Info](https://pota.app/#/park/US-3220)
+[US-3220](https://pota.app/#/park/US-3220)
 
 #### My Hunter Log
 

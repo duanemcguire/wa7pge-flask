@@ -12,3 +12,5 @@ spc: AZ
 
 #### My Hunter Log
 22:17    2025-04-05    [KK7RR](https://qrz.com/db/KK7RR)    599    599    AZ    14.049    20m    CW    [US-4430](https://pota.app/#/park/US-4430)
+
+<BR>22:17	2025-04-05	[KK7RR](https://qrz.com/db/KK7RR)	599	599	AZ	14.049	20m	CW	[US-4430](https://pota.app/#/park/US-4430)

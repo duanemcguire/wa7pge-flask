@@ -13,3 +13,4 @@ This is one of the places where Monarch butterflies winter along the California 
 
 #### My Hunter Log
 22:42    2025-04-06    [N0HR](https://qrz.com/db/N0HR)    599    599    CA    14.0621    20m    CW    [US-3461](https://pota.app/#/park/US-3461)
+<BR>22:42	2025-04-06	[N0HR](https://qrz.com/db/N0HR)	599	599	CA	14.0621	20m	CW	[US-3461](https://pota.app/#/park/US-3461)

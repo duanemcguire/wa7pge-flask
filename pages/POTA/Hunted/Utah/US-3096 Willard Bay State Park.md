@@ -10,3 +10,4 @@ title: US-3096 Willard Bay State Park
 
 #### My Hunter Log
 17:06    2025-05-20    [AE4LH](https://qrz.com/db/AE4LH)    599    599    UT    21.058    15m    CW    [US-3096](https://pota.app/#/park/US-3096)
+<BR>17:06	2025-05-20	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	21.058	15m	CW	[US-3096](https://pota.app/#/park/US-3096)

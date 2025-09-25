@@ -4,6 +4,8 @@ date: '2025-02-11T21:13:23'
 title: US-11181 Sheltowee Trace National Recreation Trail
 ---
 
+![](/static/pasted_image_0096.png)
+
 Come and explore nature along the Sheltowee Trace National Recreation Trail. This
 trail traverses nearly 290 miles across narrow ridges and deep ravines. The trail is open
 year round, so you can enjoy outdoor adventure in every season.
@@ -14,7 +16,7 @@ Sheltowee Trace. Some trail connections provide loops for a short day hike, whil
 others offer opportunities for multiple days of recreational challenge.
 https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5427184.pdf
 
-See [US-4484 Daniel Boone National Forest](US-4484%20Daniel%20Boone%20National%20Forest.md)
+See [US-4484 Daniel Boone National Forest](/POTA/Hunted/Kentucky/US-4484 Daniel Boone National Forest/)
 
 
 

@@ -3,7 +3,9 @@ spc: KS
 date: '2025-07-12'
 title: US-7396 Pottawatomie No 1 State Fishing Lake
 
-[POTA Park Info](https://pota.app/#/park/US-7396)
+[US-7396](https://pota.app/#/park/US-7396)
+
+![](/static/US-7396.jpg)
 
 #### My Hunter Log
 

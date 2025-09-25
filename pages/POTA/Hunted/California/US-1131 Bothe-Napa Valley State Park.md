@@ -10,3 +10,4 @@ title: US-1131 Bothe-Napa Valley State Park
 
 #### My Hunter Log
 21:09    2025-03-09    [KN6BAZ](https://qrz.com/db/KN6BAZ)    599    599    CA    14.063    20m    CW    [US-1131](https://pota.app/#/park/US-1131)
+<BR>21:09	2025-03-09	[KN6BAZ](https://qrz.com/db/KN6BAZ)	599	599	CA	14.063	20m	CW	[US-1131](https://pota.app/#/park/US-1131)

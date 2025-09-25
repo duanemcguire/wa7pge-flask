@@ -15,3 +15,5 @@ title: US-7377 Bolsa Chica Ecological Reserve
 
 22:22    2025-04-05    [K6TTA](https://qrz.com/db/K6TTA)    599    599    CA    14.051    20m    CW    [US-7377](https://pota.app/#/park/US-7377)
 20:42    2025-04-08    [K6TTA](https://qrz.com/db/K6TTA)    599    599    CA    14.056    20m    CW    [US-7377](https://pota.app/#/park/US-7377)
+<BR>22:22	2025-04-05	[K6TTA](https://qrz.com/db/K6TTA)	599	599	CA	14.051	20m	CW	[US-7377](https://pota.app/#/park/US-7377)
+<BR>20:42	2025-04-08	[K6TTA](https://qrz.com/db/K6TTA)	599	599	CA	14.056	20m	CW	[US-7377](https://pota.app/#/park/US-7377)

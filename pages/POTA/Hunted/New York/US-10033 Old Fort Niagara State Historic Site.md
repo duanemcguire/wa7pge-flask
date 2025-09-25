@@ -15,3 +15,4 @@ https://parks.ny.gov/historic-sites/oldfortniagara/details.aspx
 
 #### My Hunter Log
 20:15    2025-02-23    [K2EAG](https://qrz.com/db/K2EAG)    599    599    NY    28.047    10m    CW    [US-10033](https://pota.app/#/park/US-10033)
+<BR>20:15	2025-02-23	[K2EAG](https://qrz.com/db/K2EAG)	599	599	NY	28.047	10m	CW	[US-10033](https://pota.app/#/park/US-10033)

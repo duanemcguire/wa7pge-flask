@@ -2,6 +2,7 @@
 spc: MN
 date: '2024-12-22T19:46:05'
 title: US-2510 Minneopa State Park
+img: /static/pasted_image_0104.png
 ---
 
 [Weather today](https://weawow.com/c9874706)
@@ -22,3 +23,5 @@ Minneopa State Park is a state park in the U.S. state of Minnesota. It was estab
 
 
 22:31    2025-04-06    [N0ANE](https://qrz.com/db/N0ANE)    599    599    MN    14.0615    20m    CW    [US-2510](https://pota.app/#/park/US-2510)
+<BR>22:31	2025-04-06	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	14.0615	20m	CW	[US-2510](https://pota.app/#/park/US-2510)
+<BR>20:46	2025-09-20	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	14.0635	20m	CW	[US-2510](https://pota.app/#/park/US-2510)

@@ -8,3 +8,4 @@ title: US-3543 Pomponio State Beach
 ![pasted_image001.png](/static/pasted_image001_0046.png)
 #### My Hunter Log
 18:48    2025-05-04    [KZ2V](https://qrz.com/db/KZ2V)    599    599    CA    14.0565    20m    CW    [US-3543](https://pota.app/#/park/US-3543)
+<BR>18:48	2025-05-04	[KZ2V](https://qrz.com/db/KZ2V)	599	599	CA	14.0565	20m	CW	[US-3543](https://pota.app/#/park/US-3543)

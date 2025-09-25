@@ -16,3 +16,6 @@ https://en.wikipedia.org/wiki/Catalina_State_Park
 
 #### My Hunter Log
 16:55    2025-02-22    [KT7RC](https://qrz.com/db/KT7RC)    599    599    AZ    14.045    20m    CW    [US-1055](https://pota.app/#/park/US-1055)
+
+<BR>16:55	2025-02-22	[KT7RC](https://qrz.com/db/KT7RC)	599	599	AZ	14.045	20m	CW	[US-1055](https://pota.app/#/park/US-1055)
+<BR>15:23	2025-09-20	[KT7RC](https://qrz.com/db/KT7RC)	599	599	AZ	14.0473	20m	CW	[US-1055](https://pota.app/#/park/US-1055)

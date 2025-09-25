@@ -2,10 +2,12 @@
 spc: MN
 date: '2025-03-30T15:57:45.598196'
 title: US-2482 Fort Snelling State Park
+img: /static/pasted_image001_0085.png
 ---
 
 ![pasted_image.png](/static/pasted_image_0103.png)
 ![pasted_image001.png](/static/pasted_image001_0085.png)
+
 For many centuries, the area of the modern park has been of importance to the Mdewakanton Dakota people who consider it the center of the Earth. The state park, which opened in 1962, is named for the historic Fort Snelling, which dates from 1820. The fort structure is maintained and operated by the Minnesota Historical Society. The bulk of the state park preserves the bottomland forest, rivers, and backwater lakes below the river bluffs. Both the state and historic fort structure are part of the Mississippi National River and Recreation Area, a National Park Service site. 
 
 
@@ -23,3 +25,4 @@ See [US-3381 Mississippi River National Recreation Area](US-3381%20Mississippi%2
 19:23    2025-03-28    [KC0OIO](https://qrz.com/db/KC0OIO)    59    59    MN    14    20m    SSB    [US-2482](https://pota.app/#/park/US-2482)
 
 18:45    2025-05-03    [NR0T](https://qrz.com/db/NR0T)    599    599    MN    14.068    20m    CW    [US-2482](https://pota.app/#/park/US-2482)
+<BR>18:45	2025-05-03	[NR0T](https://qrz.com/db/NR0T)	599	599	MN	14.068	20m	CW	[US-2482](https://pota.app/#/park/US-2482)

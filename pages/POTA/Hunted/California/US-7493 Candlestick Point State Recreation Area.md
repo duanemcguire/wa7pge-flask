@@ -16,3 +16,5 @@ Often called a "hidden gem," Candlestick Point State Recreation Area (SRA) is a 
 19:10    2025-02-16    [NU6W](https://qrz.com/db/NU6W)    599    599    CA    14.0625    20m    CW    [US-7493](https://pota.app/#/park/US-7493)
 
 22:35    2025-04-05    [NU6W](https://qrz.com/db/NU6W)    339    599    CA    14.0695    20m    CW    [US-7493](https://pota.app/#/park/US-7493)
+<BR>19:10	2025-02-16	[NU6W](https://qrz.com/db/NU6W)	599	599	CA	14.0625	20m	CW	[US-7493](https://pota.app/#/park/US-7493)
+<BR>22:35	2025-04-05	[NU6W](https://qrz.com/db/NU6W)	339	599	CA	14.0695	20m	CW	[US-7493](https://pota.app/#/park/US-7493)

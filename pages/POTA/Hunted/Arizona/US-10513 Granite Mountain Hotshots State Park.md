@@ -20,3 +20,5 @@ https://en.wikipedia.org/wiki/Granite_Mountain_Hotshots_Memorial_State_Park
 
 #### My Hunter Log
 19:03    2025-02-16    [K7LZZ](https://qrz.com/db/K7LZZ)    599    599    AZ    14.050    20m    CW    [US-10513](https://pota.app/#/park/US-10513)
+
+<BR>19:03	2025-02-16	[K7LZZ](https://qrz.com/db/K7LZZ)	599	599	AZ	14.05	20m	CW	[US-10513](https://pota.app/#/park/US-10513)

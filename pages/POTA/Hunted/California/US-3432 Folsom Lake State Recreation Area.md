@@ -13,3 +13,4 @@ title: US-3432 Folsom Lake State Recreation Area
 
 #### My Hunter Log
 00:02    2025-02-15    [WE6Z](https://qrz.com/db/WE6Z)    599    599    CA    14.056    20m    CW    [US-3432](https://pota.app/#/park/US-3432)
+<BR>00:02	2025-02-15	[WE6Z](https://qrz.com/db/WE6Z)	599	599	CA	14.056	20m	CW	[US-3432](https://pota.app/#/park/US-3432)

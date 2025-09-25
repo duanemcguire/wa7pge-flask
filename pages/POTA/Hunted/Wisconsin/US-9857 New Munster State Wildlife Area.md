@@ -15,3 +15,4 @@ In 1947, the Wisconsin Conservation Commission created the New Munster Wildlife 
 
 #### My Hunter Log
 20:51    2025-04-03    [AC9OT](https://qrz.com/db/AC9OT)    339    339    WI    14.062    20m    CW    [US-9857](https://pota.app/#/park/US-9857)
+<BR>20:51	2025-04-03	[AC9OT](https://qrz.com/db/AC9OT)	339	339	WI	14.062	20m	CW	[US-9857](https://pota.app/#/park/US-9857)

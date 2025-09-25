@@ -43,3 +43,4 @@ It was fun and challenging.  I got out to the island by 9 am before it got too h
 
 
 20:33    2025-03-28    [AI7XP](https://qrz.com/db/AI7XP)    59    59    UT    146.42    2m    FM    [US-3062](https://pota.app/#/park/US-3062)
+<BR>20:33	2025-03-28	[AI7XP](https://qrz.com/db/AI7XP)	59	59	UT	146.42	2m	FM	[US-3062](https://pota.app/#/park/US-3062)

@@ -22,3 +22,8 @@ https://geoinfo.nmt.edu/tour/state/rockhound/home.html
 00:15    2025-02-19    [WI0S](https://qrz.com/db/WI0S)    599    599    NM    14.0569    20m    CW    [US-2713](https://pota.app/#/park/US-2713)
 16:42    2025-02-21    [WI0S](https://qrz.com/db/WI0S)    59        59        NM    14.059    2    20m    CW    [US-2713](https://pota.app/#/park/US-2713)
 23:35    2025-02-25    [WI0S](https://qrz.com/db/WI0S)    599    599    NM    14.0634    20m    CW    [US-2713](https://pota.app/#/park/US-2713)
+<BR>22:48	2025-02-16	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.111	20m	CW	[US-2713](https://pota.app/#/park/US-2713)
+<BR>23:15	2025-02-17	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0586	20m	CW	[US-2713](https://pota.app/#/park/US-2713)
+<BR>00:15	2025-02-19	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0569	20m	CW	[US-2713](https://pota.app/#/park/US-2713)
+<BR>16:42	2025-02-21	[WI0S](https://qrz.com/db/WI0S)	59	59	NM	14.059	20m	CW	[US-2713](https://pota.app/#/park/US-2713)
+<BR>23:35	2025-02-25	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0634	20m	CW	[US-2713](https://pota.app/#/park/US-2713)

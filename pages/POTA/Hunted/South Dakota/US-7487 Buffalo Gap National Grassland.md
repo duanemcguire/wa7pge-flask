@@ -12,3 +12,4 @@ title: US-7487 Buffalo Gap National Grassland
 
 #### My Hunter Log
 21:51    2025-04-08    [K7NXL](https://qrz.com/db/K7NXL)    599    599    SD    14.045    20m    CW    [US-7487](https://pota.app/#/park/US-7487)
+<BR>21:51	2025-04-08	[K7NXL](https://qrz.com/db/K7NXL)	599	599	SD	14.045	20m	CW	[US-7487](https://pota.app/#/park/US-7487)

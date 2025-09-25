@@ -21,3 +21,7 @@ Remote desert peak & state park with hiking trails & a cable-assisted climb to t
 15:12    2025-02-22    [N2GA](https://qrz.com/db/N2GA)            599    599    AZ    14.054    20m    CW    [US-1065](https://pota.app/#/park/US-1065)
 15:12    2025-02-22    [N2GA](https://qrz.com/db/N2GA)            599    599    AZ    14.054    20m    CW    [US-1065](https://pota.app/#/park/US-1065)
 23:08    2025-03-05    [VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)    599    599    AZ    14.051    20m    CW    [US-1065](https://pota.app/#/park/US-1065)
+
+<BR>00:06	2025-02-19	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.047	20m	CW	[US-1065](https://pota.app/#/park/US-1065)
+<BR>15:12	2025-02-22	[N2GA](https://qrz.com/db/N2GA)	599	599	AZ	14.054	20m	CW	[US-1065](https://pota.app/#/park/US-1065)
+<BR>23:08	2025-03-05	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.051	20m	CW	[US-1065](https://pota.app/#/park/US-1065)

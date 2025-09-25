@@ -22,3 +22,4 @@ Saltwater State Park delivers a sandy beach getaway only two miles from Intersta
 
 20:44    2025-02-11    [KK7UEH](https://qrz.com/db/KK7UEH)    599    599    WA    14.057    20m    CW    [US-3262](https://pota.app/#/park/US-3262)
 19:00    2025-02-16    [NA7DO](https://qrz.com/db/NA7DO)    599    599    WA    14.114    20m    CW    [US-3262](https://pota.app/#/park/US-3262)
+<BR>19:00	2025-02-16	[NA7DO](https://qrz.com/db/NA7DO)	599	599	WA	14.114	20m	CW	[US-3262](https://pota.app/#/park/US-3262)

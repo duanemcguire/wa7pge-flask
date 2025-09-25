@@ -12,3 +12,4 @@ https://www.michigan.org/property/holly-recreation-area
 ![pasted_image001.png](/static/pasted_image001_0081.png)
 #### My Hunter Log
 17:05    2025-02-21    [W8RNB](https://qrz.com/db/W8RNB)    599    599    MI    14.063    20m    CW    [US-3313](https://pota.app/#/park/US-3313)
+<BR>17:05	2025-02-21	[W8RNB](https://qrz.com/db/W8RNB)	599	599	MI	14.063	20m	CW	[US-3313](https://pota.app/#/park/US-3313)

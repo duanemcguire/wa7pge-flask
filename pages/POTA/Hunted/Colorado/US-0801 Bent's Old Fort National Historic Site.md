@@ -3,10 +3,10 @@ spc: CO
 date: '2025-05-10T23:14:24.175342'
 title: US-0801 Bent's Old Fort National Historic Site
 ---
+![](/static/US-0801map.png)
 
-[.\pasted_image_250515.png](/static/._pasted_image_250515.png)
+![](/static/US-0801.jpg)
 
-[.\pasted_image_250515-001.png](/static/._pasted_image_250515-001.png)
 
 William and Charles Bent, along with Ceran St. Vrain, built the original adobe fort on this site in 1833 to trade with Plains Indians and trappers. The fort quickly became the center of the expanding holdings of Bent, St. Vrain & Company, including Fort St. Vrain to the north and Fort Adobe to the south, along with company stores in Taos and Santa Fe. The primary trade was with the Southern Cheyenne and Arapaho Indians for buffalo robes.
 https://www.nps.gov/beol/learn/historyculture/index.htm

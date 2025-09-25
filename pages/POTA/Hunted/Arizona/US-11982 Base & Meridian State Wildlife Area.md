@@ -12,3 +12,4 @@ https://www.azgfd.com/location/base-and-meridian-wildlife-area/
 
 #### My Hunter Log
 00:26    2025-02-19    [K7LZZ](https://qrz.com/db/K7LZZ)    599    599    AZ    14.065    20m    CW    [US-11982](https://pota.app/#/park/US-11982)
+<BR>00:26	2025-02-19	[K7LZZ](https://qrz.com/db/K7LZZ)	599	599	AZ	14.065	20m	CW	[US-11982](https://pota.app/#/park/US-11982)

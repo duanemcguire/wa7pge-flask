@@ -20,3 +20,4 @@ https://en.wikipedia.org/wiki/Pancho_Villa_Expedition
 
 #### My Hunter Log
 15:21    2025-02-21    [KB0TYJ](https://qrz.com/db/KB0TYJ)    59    59    NM    14.282    20m    SSB    [US-2710](https://pota.app/#/park/US-2710)
+<BR>15:21	2025-02-21	[KB0TYJ](https://qrz.com/db/KB0TYJ)	59	59	NM	14.282	20m	SSB	[US-2710](https://pota.app/#/park/US-2710)

@@ -10,3 +10,4 @@ Muleshoe National Wildlife Refuge offers wildlife-dependent recreation, includin
 
 #### My Hunter Log
 19:37    2025-02-22    [K5OHY](https://qrz.com/db/K5OHY)    599    599    TX    14.063    20m    CW    [US-0552](https://pota.app/#/park/US-0552)
+<BR>19:37	2025-02-22	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.063	20m	CW	[US-0552](https://pota.app/#/park/US-0552)

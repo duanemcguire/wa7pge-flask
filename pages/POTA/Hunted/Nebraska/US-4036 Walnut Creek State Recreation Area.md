@@ -3,7 +3,7 @@ spc: NE
 date: '2025-08-03'
 title: US-4036 Walnut Creek State Recreation Area
 
-[POTA Park Info](https://pota.app/#/park/US-4036)
+[US-4036](https://pota.app/#/park/US-4036)
 
 #### My Hunter Log
 

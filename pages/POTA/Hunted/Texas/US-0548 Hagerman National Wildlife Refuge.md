@@ -18,3 +18,6 @@ https://friendsofhagerman.com/
 19:07    2025-02-16    [KW5CW](https://qrz.com/db/KW5CW)    599    599    TX    14.0481    20m    CW    [US-0548](https://pota.app/#/park/US-0548)
 
 21:53    2025-05-20    [W5P](https://qrz.com/db/W5P)    449    449    TX    14.0409    20m    CW    [US-0548](https://pota.app/#/park/US-0548)
+<BR>19:07	2025-02-16	[KW5CW](https://qrz.com/db/KW5CW)	599	599	TX	14.0481	20m	CW	[US-0548](https://pota.app/#/park/US-0548)
+<BR>21:53	2025-05-20	[W5P](https://qrz.com/db/W5P)	449	449	TX	14.0409	20m	CW	[US-0548](https://pota.app/#/park/US-0548)
+<BR>22:34	2025-09-19	[KW5CW](https://qrz.com/db/KW5CW)	599	599	TX	14.0685	20m	CW	[US-0548](https://pota.app/#/park/US-0548)

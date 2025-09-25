@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      max-width:800px;
+      object-fit: cover;
+    }
+
+     @media screen and (max-width: 800px) {
+        .swiper-slide img {
+        display: block;
+        width:300px;
+        object-fit: cover;
+        }
+
+
+  </style>
+<h2>POTA Scenes</h2>
+<article>
+<div style="margin-bottom: 10px;">
+As of September 2025, I've hunted 300 parks, but have activated only 9. A few images here are from my visits to the parks.  Most are collected from Google maps and other sources.  
+</div>
+<!-- Swiper -->
+<div class="swiper mySwiper" style="width: 800px;">
+  <div class="swiper-wrapper">
+    {% for image in images %}
+        <div class="swiper-slide"><a href="{{ image[1] }}"><img src="{{ image[0] }}" /></a></div>      
+    {% endfor %}
+  </div>
+</div>    
+
+</article>        
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {"loop": true, "autoplay": {delay: 5000},});
+  </script>
+
+{% endblock %}

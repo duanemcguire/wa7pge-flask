@@ -3,7 +3,9 @@ spc: KS
 date: '2025-07-20'
 title: US-2338 Fall River State Park
 
-[POTA Park Info](https://pota.app/#/park/US-2338)
+[US-2338](https://pota.app/#/park/US-2338)
+
+![](/static/US-2338.jpg)
 
 #### My Hunter Log
 

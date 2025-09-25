@@ -11,3 +11,4 @@ Civilian Conservation Corps workers spent years building this special park in th
 
 #### My Hunter Log
 15:50    2025-04-01    [KA5CRL](https://qrz.com/db/KA5CRL)    599    599    TX    14.058    20m    CW    [US-3024](https://pota.app/#/park/US-3024)
+<BR>15:50	2025-04-01	[KA5CRL](https://qrz.com/db/KA5CRL)	599	599	TX	14.058	20m	CW	[US-3024](https://pota.app/#/park/US-3024)

@@ -5,6 +5,8 @@ title: Parks on the Air
 
 * [Parks I've Hunted](/POTA/Hunted/)
 * [Parks I've Activated](/POTA/Activations/)
+* [POTA Scenes](/POTA/Scenes/) (A collection of park photos)
+
 
 [Parks on the Air (POTA)](https://parksontheair.com/), is an ongoing amateur radio activity that encourages hams to set up portable operations in public parks and contact others throughout the nation and world.  Hams who go to parks and set up portable operations are known as **activators,** while those contacting the activators are known as **hunters**.
 

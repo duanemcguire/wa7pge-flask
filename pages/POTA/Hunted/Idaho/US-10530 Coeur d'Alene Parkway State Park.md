@@ -16,3 +16,4 @@ title: US-10530 Coeur d'Alene Parkway State Park
 20:10:42    2024-12-31    WA0WWW    599    599    ID    14.047    20m    CW    US-10530
 
 20:03    2025-02-24    [WA0WWW](https://qrz.com/db/WA0WWW)    599    599    ID    14.048    20m    CW    [US-10530](https://pota.app/#/park/US-10530)
+<BR>20:03	2025-02-24	[WA0WWW](https://qrz.com/db/WA0WWW)	599	599	ID	14.048	20m	CW	[US-10530](https://pota.app/#/park/US-10530)

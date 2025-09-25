@@ -14,3 +14,4 @@ https://www.nps.gov/wica/index.htm
 
 #### My Hunter Log
 20:14    2025-02-24    [KT0A](https://qrz.com/db/KT0A)    599    599    SD    14.0529    20m    CW    [US-0068](https://pota.app/#/park/US-0068)
+<BR>20:14	2025-02-24	[KT0A](https://qrz.com/db/KT0A)	599	599	SD	14.0529	20m	CW	[US-0068](https://pota.app/#/park/US-0068)

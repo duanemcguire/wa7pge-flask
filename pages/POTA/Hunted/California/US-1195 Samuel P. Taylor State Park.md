@@ -11,3 +11,4 @@ Park noted for its redwood groves & grassy hills offers camping, hiking trails &
 
 #### My Hunter Log
 20:40    2025-04-08    [K6TR](https://qrz.com/db/K6TR)    339    339    CA    14.0449    20m    CW    [US-1195](https://pota.app/#/park/US-1195)
+<BR>20:40	2025-04-08	[K6TR](https://qrz.com/db/K6TR)	339	339	CA	14.0449	20m	CW	[US-1195](https://pota.app/#/park/US-1195)

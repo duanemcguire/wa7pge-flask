@@ -1,9 +1,14 @@
 import re
 import sys
+import os
+import sqlite3
+import re
 from flask import Flask, request, render_template, abort, url_for, make_response
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 from datetime import datetime
+from pathlib import Path
+
 
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
@@ -11,12 +16,12 @@ FLATPAGES_EXTENSION = '.md'
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
+park_db_path = os.path.expanduser("~/docs/projects/Ham Radio/POTA/usa.db")
+
 
 # check data
 err = False
 for p in pages:
-#    print(p.path)
-#    print(p.meta)
     if type(p.meta['date']) is not str:
         err = True 
         print (f"Bad date string: {p.path} {type(p.meta['date'])}")
@@ -123,6 +128,84 @@ def breadcrumbs(path):
         html = html + "><a href='" + link + "'>" + bc + "</a>"
     return html
 
+def find_first_file_starting_with(root_path, prefix):
+    root = Path(root_path)
+    for p in root.rglob(f"{prefix}*"):
+        if p.is_file():
+            return p
+    return None
+
+def lookup_park(filename):
+    """
+    Updates the title of a photo in Shotwell's database.
+    """
+    #If the filename shows what park it is, get the URL directly. 
+    filename  = os.path.basename(filename)
+    pattern = r"US-\d+\.\w+"
+    ret = "#"
+    m = re.match(pattern,filename)
+    current_file = os.path.abspath(__file__)
+    current_dir = os.path.dirname(current_file)
+    os.chdir(current_dir)
+
+    start_with = f"{current_dir}/pages/POTA/"
+    replacement = "/POTA/"
+
+    if m:
+        path = find_first_file_starting_with(start_with, m.group(0).split('.')[0])
+        try:
+            path = str(path)
+            path = path.replace(start_with,replacement)
+            path = path.replace(".md","", 1)
+        except TypeError:
+            path = "#"
+        except AttributeError:
+            path = "#"            
+        ret = path
+    else:
+        try:
+            path = str(find_park(filename))
+            print(path)
+            print(start_with)
+            path = path.replace(start_with,replacement)
+            path = path.replace(".md","", 1)
+        except TypeError:
+            print(f"typeError: {path}")
+            path = "#"
+        except AttributeError:
+            path = "#"            
+    ret = path
+    return ret    
+
+def find_park(search_text, directory="/home/duane/Dropbox/Docs/code/wa7pge-flask/pages/POTA"):
+    """
+    Search .md files in the given directory for a specific text string.
+
+    :param directory: Directory path to search.
+    :param search_text: Text string to search for.
+    :return: List of filenames containing the search string.
+    """
+    matching_files = []
+    for root, dirs, files in os.walk(directory):
+
+        for file in files:
+            if file.lower().endswith(".md"):
+                file_path = os.path.join(root, file)
+                try:
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        content = f.read()
+                        if search_text in content:
+                            matching_files.append(file_path)
+                except Exception as e:
+                    print(f"Error reading {file_path}: {e}")
+    if len(matching_files):
+
+        return matching_files[0]
+    else:
+        return ""
+
+
+
 
 
 @app.route('/')
@@ -139,8 +222,7 @@ def index():
 
     latest = sorted(posts, reverse=True,
                     key=lambda p: p.meta['date'])[:7]
-    for p in latest:
-        print(p.path)
+
     return render_template('home/home.html',
                            latest=latest,                            
                            h2="Home",page=page,
@@ -235,7 +317,7 @@ def potahunt(spc):
     for p in posts:
         p = add_extra_meta(p)
         p2.append(p)
-        print(p.path)
+        
     return render_template('tiles.html', posts=p2,
                            h2=f"{spc} Parks Hunted",
                            breadcrumbs=breadcrumbs(request.path),
@@ -268,6 +350,25 @@ def page(path):
 @app.route('/Search/')
 def search():
     return render_template('search.html', breadcrumbs=breadcrumbs(request.path))
+
+
+@app.route('/POTA/Scenes/')
+def pota_scenes():
+    current_file = os.path.abspath(__file__)
+    current_dir = os.path.dirname(current_file)
+    os.chdir(current_dir)
+    img_folder = "static/POTA-Scenes"
+    images1 = sorted([f for f in os.listdir(img_folder)])
+    images = []
+    for image in images1:
+        image = f"/{img_folder}/{image}"
+        park_path = lookup_park(image)
+        images.append([image,park_path])
+ 
+
+    return render_template('pota-scenes.html', breadcrumbs=breadcrumbs(request.path), images=images)
+
+
 
 
 @app.route('/rss.xml')

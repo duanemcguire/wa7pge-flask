@@ -11,3 +11,4 @@ https://tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=59
 
 #### My Hunter Log
 20:21    2025-02-14    [WB0ISG](https://qrz.com/db/WB0ISG)    599    599    TX    21.0419    15m    CW    [US-6588](https://pota.app/#/park/US-6588)
+<BR>20:21	2025-02-14	[WB0ISG](https://qrz.com/db/WB0ISG)	599	599	TX	21.0419	15m	CW	[US-6588](https://pota.app/#/park/US-6588)

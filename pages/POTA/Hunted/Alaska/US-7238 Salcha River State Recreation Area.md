@@ -23,3 +23,5 @@ https://www.travelalaska.com/destinations/parks-public-lands/salcha-river-state-
 ![pasted_image001.png](/static/pasted_image001_0012.png)
 #### My Hunter Log
 19:52    2025-02-23    [KL7AC](https://qrz.com/db/KL7AC)    599    599    AK    21.055    15m    CW    [US-7238](https://pota.app/#/park/US-7238)
+
+<BR>19:52	2025-02-23	[KL7AC](https://qrz.com/db/KL7AC)	599	599	AK	21.055	15m	CW	[US-7238](https://pota.app/#/park/US-7238)

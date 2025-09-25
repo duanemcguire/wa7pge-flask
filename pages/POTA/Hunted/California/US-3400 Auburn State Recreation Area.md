@@ -10,3 +10,4 @@ title: US-3400 Auburn State Recreation Area
 
 #### My Hunter Log
 02:53    2025-05-26    [K6AVB](https://qrz.com/db/K6AVB)    599    599    CA    7.0515    40m    CW    [US-3400](https://pota.app/#/park/US-3400)
+<BR>02:53	2025-05-26	[K6AVB](https://qrz.com/db/K6AVB)	599	599	CA	7.0515	40m	CW	[US-3400](https://pota.app/#/park/US-3400)

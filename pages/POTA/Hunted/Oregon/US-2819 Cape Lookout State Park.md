@@ -10,3 +10,4 @@ title: US-2819 Cape Lookout State Park
 
 #### My Hunter Log
 02:57    2025-05-26    [WV1T](https://qrz.com/db/WV1T)    339    339    OR    7.061    40m    CW    [US-2819](https://pota.app/#/park/US-2819)
+<BR>02:57	2025-05-26	[WV1T](https://qrz.com/db/WV1T)	339	339	OR	7.061	40m	CW	[US-2819](https://pota.app/#/park/US-2819)

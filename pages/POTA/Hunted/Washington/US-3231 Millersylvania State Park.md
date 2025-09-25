@@ -16,3 +16,4 @@ On a return trip in 2017,  I took this picture of the swimming area there.  I sp
 
 #### My Hunter Log
 23:14    2025-02-16    [KF4ESG](https://qrz.com/db/KF4ESG)    59    59    WA    14.314    20m    SSB    [US-3231](https://pota.app/#/park/US-3231)
+<BR>23:14	2025-02-16	[KF4ESG](https://qrz.com/db/KF4ESG)	59	59	WA	14.314	20m	SSB	[US-3231](https://pota.app/#/park/US-3231)

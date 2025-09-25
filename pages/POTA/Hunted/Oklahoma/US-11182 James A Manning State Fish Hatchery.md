@@ -12,3 +12,4 @@ title: US-11182 James A Manning State Fish Hatchery
 
 #### My Hunter Log
 22:27    2025-02-15    [K2FTS](https://qrz.com/db/K2FTS)    599    599    OK    21.0985    15m    CW    [US-11182](https://pota.app/#/park/US-11182)
+<BR>22:27	2025-02-15	[K2FTS](https://qrz.com/db/K2FTS)	599	599	OK	21.0985	15m	CW	[US-11182](https://pota.app/#/park/US-11182)

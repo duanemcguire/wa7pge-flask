@@ -3,7 +3,7 @@ spc: MO
 date: '2025-07-20'
 title: US-0374 Big Muddy National Wildlife Refuge
 
-[POTA Park Info](https://pota.app/#/park/US-0374)
+[US-0374](https://pota.app/#/park/US-0374)
 
 #### My Hunter Log
 

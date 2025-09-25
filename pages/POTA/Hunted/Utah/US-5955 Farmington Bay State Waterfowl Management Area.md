@@ -22,3 +22,6 @@ I took our little teardrop trailer for the shade that the awning could provide. 
 15:03	2025-07-20	[[https://qrz.com/db/AE4LH|AE4LH]]	599	599	UT	14.05	20m	CW	[[https://pota.app/#/park/US-5955|US-5955]]
 15:03	2025-07-20	[https://qrz.com/db/AE4LH](AE4LH)	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	14.05	20m	CW	[US-5955](https://pota.app/#/park/US-5955)
 <BR>15:03	2025-07-20	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	14.05	20m	CW	[US-5955](https://pota.app/#/park/US-5955)
+<BR>17:46	2025-05-22	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	14.125	20m	CW	[US-5955](https://pota.app/#/park/US-5955)
+<BR>16:38	2025-06-18	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	14.064	20m	CW	[US-5955](https://pota.app/#/park/US-5955)
+<BR>14:24	2025-06-21	[AE4LH](https://qrz.com/db/AE4LH)	599	599	UT	14.11	20m	CW	[US-5955](https://pota.app/#/park/US-5955)

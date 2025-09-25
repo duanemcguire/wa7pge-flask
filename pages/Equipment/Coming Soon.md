@@ -13,6 +13,8 @@ This will be a project!   I purchased the  Harvey Wells TBS-50  recently, and I 
 
 This model of transmitter is the first transmitter I used as a novice.   It was loaned to me and I used it until I acquired a more modern rigs.  It will be fun to operate again. 
 
+The Harvey-Wells story is documented in the [October, 2025 edition of QST](/static/pdf/harvey-wells.pdf).
+
 ### Hammarlund Super-Pro
 
  ![super-pro.png](/static/super-pro.png)

@@ -11,3 +11,4 @@ title: US-1012 Moraine Hills State Park
 
 #### My Hunter Log
 23:06    2025-02-17    [KE9BHN](https://qrz.com/db/KE9BHN)    599    599    IL    14.0515    20m    CW    [US-1012](https://pota.app/#/park/US-1012)
+<BR>23:06	2025-02-17	[KE9BHN](https://qrz.com/db/KE9BHN)	599	599	IL	14.0515	20m	CW	[US-1012](https://pota.app/#/park/US-1012)

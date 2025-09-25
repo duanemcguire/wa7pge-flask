@@ -13,3 +13,6 @@ spc: AZ
 
 #### My Hunter Log
 23:04    2025-02-17    [WR7B](https://qrz.com/db/WR7B)    59    59    AZ    14.0325    20m    CW    [US-4429](https://pota.app/#/park/US-4429)
+
+<BR>23:04	2025-02-17	[WR7B](https://qrz.com/db/WR7B)	59	59	AZ	14.0325	20m	CW	[US-4429](https://pota.app/#/park/US-4429)
+<BR>19:33	2025-02-22	[K7NOJ](https://qrz.com/db/K7NOJ)	599	599	WA	14.036	20m	CW	[US-4429](https://pota.app/#/park/US-4429)

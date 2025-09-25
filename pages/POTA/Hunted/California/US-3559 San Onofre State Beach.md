@@ -11,3 +11,4 @@ title: US-3559 San Onofre State Beach
 
 #### My Hunter Log
 20:48    2025-05-16    [WA6MOW](https://qrz.com/db/WA6MOW)    559    599    CA    14.065    20m    CW    [US-3559](https://pota.app/#/park/US-3559)
+<BR>20:48	2025-05-16	[WA6MOW](https://qrz.com/db/WA6MOW)	559	599	CA	14.065	20m	CW	[US-3559](https://pota.app/#/park/US-3559)

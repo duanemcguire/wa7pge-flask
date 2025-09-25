@@ -15,3 +15,4 @@ https://explorethestjohns.com/location/river-lakes-conservation-area/
 
 #### My Hunter Log
 20:00    2025-02-23    [K4QD](https://qrz.com/db/K4QD)    599    599    FL    21.0449    15m    CW    [US-8369](https://pota.app/#/park/US-8369)
+<BR>20:00	2025-02-23	[K4QD](https://qrz.com/db/K4QD)	599	599	FL	21.0449	15m	CW	[US-8369](https://pota.app/#/park/US-8369)

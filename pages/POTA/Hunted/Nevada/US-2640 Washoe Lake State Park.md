@@ -14,3 +14,4 @@ https://travelnevada.com/parks-recreational-areas/washoe-lake-state-park/
 
 #### My Hunter Log
 23:16    2025-02-16    [AG7TX](https://qrz.com/db/AG7TX)    59    59    NV    14.290    20m    SSB    [US-2640](https://pota.app/#/park/US-2640)
+<BR>23:16	2025-02-16	[AG7TX](https://qrz.com/db/AG7TX)	59	59	NV	14.29	20m	SSB	[US-2640](https://pota.app/#/park/US-2640)

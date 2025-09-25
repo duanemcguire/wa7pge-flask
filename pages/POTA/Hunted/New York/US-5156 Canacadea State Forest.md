@@ -15,3 +15,4 @@ Today, Canacadea and all state forests in New York are managed for multiple bene
 
 #### My Hunter Log
 23:43:21    2025-03-30    [KD2WHG](https://qrz.com/db/KD2WHG)    599    599        14.061    20m    CW    [US-5156](https://pota.app/#/park/US-5156)
+<BR>23:43	2025-03-30	[KD2WHG](https://qrz.com/db/KD2WHG)	599	599	NY	14.061	20m	CW	[US-5156](https://pota.app/#/park/US-5156)

@@ -9,3 +9,4 @@ title: US-2790 Lake Murray State Park
 
 #### My Hunter Log
 17:31    2025-04-18    [WR5X](https://qrz.com/db/WR5X)    599    599    OK    14.042    20m    CW    [US-2790](https://pota.app/#/park/US-2790)
+<BR>17:31	2025-04-18	[WR5X](https://qrz.com/db/WR5X)	599	599	OK	14.042	20m	CW	[US-2790](https://pota.app/#/park/US-2790)

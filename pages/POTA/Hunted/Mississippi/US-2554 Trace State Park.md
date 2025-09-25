@@ -13,3 +13,4 @@ https://en.wikipedia.org/wiki/Trace_State_Park
 
 #### My Hunter Log
 23:34    2025-02-22    [KG5SSB](https://qrz.com/db/KG5SSB)    599    599    MS    14.065    20m    CW    [US-2554](https://pota.app/#/park/US-2554)
+<BR>23:34	2025-02-22	[KG5SSB](https://qrz.com/db/KG5SSB)	599	599	MS	14.065	20m	CW	[US-2554](https://pota.app/#/park/US-2554)
