@@ -18,7 +18,7 @@ The soldiers from Fort Snelling had gardens, livestock, bakery, and boat storage
 https://en.wikipedia.org/wiki/Fort_Snelling_State_Park
 
 
-See [US-3381 Mississippi River National Recreation Area](US-3381%20Mississippi%20River%20National%20Recreation%20Area.md)
+See [US-3381 Mississippi River National Recreation Area](/static/US-3381%20Mississippi%20River%20National%20Recreation%20Area.md)
 
 
 #### My Hunter Log

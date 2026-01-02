@@ -48,5 +48,13 @@ I'm not yet  comfortable with it, but here it is in action:
   <source src="https://duanemcguire.nyc3.cdn.digitaloceanspaces.com/wa7pge/vibroplex-test.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<BR><BR>
+In the fall of 2025, I acquired a sideswiper key made by KN4YB.  The sideswiper was introduced in the early days of telegraphy as an instrument that would reduce tendon stress for operators.  In design, it is basically two straight keys laid on their side.  Operating the sideswiper (also known as a cootie) is a skill all of its own.   I've grown to like this mechanical key.   
 
+Here it is in action: 
 
+<video  width="100%"  controls  >
+  <source src="
+  https://duanemcguire.nyc3.cdn.digitaloceanspaces.com/wa7pge/IMG_0448_20.52.5.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

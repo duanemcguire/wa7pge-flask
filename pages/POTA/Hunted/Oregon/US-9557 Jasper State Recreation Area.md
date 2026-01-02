@@ -20,3 +20,4 @@ title: US-9557 Jasper State Recreation Area
 <BR>16:45	2025-03-31	[AB6SV](https://qrz.com/db/AB6SV)	599	599	OR	14.05	20m	CW	[US-9557](https://pota.app/#/park/US-9557)
 <BR>16:50	2025-04-01	[AB6SV](https://qrz.com/db/AB6SV)	599	599	OR	14.046	20m	CW	[US-9557](https://pota.app/#/park/US-9557)
 <BR>18:18	2025-06-29	[AB6SV](https://qrz.com/db/AB6SV)	599	599	OR	14.088	20m	CW	[US-9557](https://pota.app/#/park/US-9557)
+<BR>17:51	2025-12-28	[AB6SV](https://qrz.com/db/AB6SV)	599	599	OR	14.047	20m	CW	[US-9557](https://pota.app/#/park/US-9557)

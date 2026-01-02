@@ -13,8 +13,10 @@ from pathlib import Path
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
+
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.config['FLATPAGES_MARKDOWN_EXTENSIONS'] = ['codehilite', 'tables'] # Enable the 'tables' extension
 pages = FlatPages(app)
 park_db_path = os.path.expanduser("~/docs/projects/Ham Radio/POTA/usa.db")
 

@@ -3,9 +3,20 @@ date: '2024-11-27T03:02:06'
 title: Instant Character Recognition
 ---
 
+<style>
+  table, th, td {
+    border: 1px solid black; /* Sets a 1px solid black border */
+    border-collapse: collapse; /* Merges cell borders into a single line */
+  }
+  th, td {
+    padding: 0.1em; /* Adds spacing around content */
+  }
+</style>
+
+
 With the help of [Long Island CW Club (LICW)](https://longislandcwclub.org/),  I continue my quest to learn CW well enough that I can listen to it and comprehend conversationally at 20 words per minute or better.   
 
-An essential skill for conversational CW is speedy character recognition, or as it is often called, Instant Character Recognition, or ICR.  Many current instructional  materials  for learning Morse code refer to Nancy Kott's article [Instant Recognition:](https://cwops.org/wp-content/uploads/2019/08/Instant-Recognition-Nancy-Kott.pdf) [A Better Method Of Building Morse Code Speed.](https://cwops.org/wp-content/uploads/2019/08/Instant-Recognition-Nancy-Kott.pdf)  Recently I've  experienced a plateau in CW speed at about  17 words per minute.  Re-reading Ms. Kott's article I find that it is the plateau she described for another learner.   With my progress to date, I had assumed that I did, indeed have "instant character recognition" as described in the article.   But several instructors within [LICW](https://longislandcwclub.org/) suggested that I take another look; I may not really have ICR.   With the help of a new software tool, I have proven them right! 
+An essential skill for conversational CW is speedy character recognition, or as it is3 often called, Instant Character Recognition, or ICR.  Many current instructional  materials  for learning Morse code refer to Nancy Kott's article [Instant Recognition:](https://cwops.org/wp-content/uploads/2019/08/Instant-Recognition-Nancy-Kott.pdf) [A Better Method Of Building Morse Code Speed.](https://cwops.org/wp-content/uploads/2019/08/Instant-Recognition-Nancy-Kott.pdf)  Recently I've  experienced a plateau in CW speed at about  17 words per minute.  Re-reading Ms. Kott's article I find that it is the plateau she described for another learner.   With my progress to date, I had assumed that I did, indeed have "instant character recognition" as described in the article.   But several instructors within [LICW](https://longislandcwclub.org/) suggested that I take another look; I may not really have ICR.   With the help of a new software tool, I have proven them right! 
 
 ### Code-smore, a practice tool for Morse Code
 Code-Smore is software conceived by me and written by my son, [Ryan McGuire](https://github.com/enigmacurry).  Code-smore's *fecr-quiz* can be used as an evaluation tool, and as a practice tool for Instant Character Recognition, or as I call it *Fast Enough Character Recognition.*    I'm a good touch typist, and the tool was designed for me.  I think it will be helpful to you, on your path to *Fast Enough Character Recognition*, if you are also a good touch typist.  
@@ -22,6 +33,40 @@ As a learner, I'll need to make some judgements about these results, but one thi
 My current results (an improvement)
 ![pasted_image003.png](/static/pasted_image003_0003.png)
 
+
+*** Update December 17, 2025 ***
+My current results (more improvement)
+
+| Character | Response Time |
+| --------- | ------ |
+| L	| 43ms| 
+| O	| 95ms| 
+| V	| 96ms| 
+| F	| 96ms| 
+| G	| 127ms| 
+| U	| 145ms| 
+| S	| 160ms| 
+| Z	| 160ms| 
+| Y	| 167ms| 
+| A	| 173ms| 
+| P	| 178ms| 
+| H	| 188ms| 
+| D	| 188ms| 
+| Q	| 191ms| 
+| K	| 194ms| 
+| C	| 205ms| 
+| N	| 212ms| 
+| B	| 216ms| 
+| X	| 222ms| 
+| R	| 227ms| 
+| I	| 254ms| 
+| M	| 272ms| 
+| W	| 302ms| 
+| T	| 309ms| 
+| J	| 343ms| 
+| E	| 364ms| 
+
+<BR><BR>
 
 ### Code-smore usage examples
 Code-smore is a command line software tool for Windows and Linux operating systems.   If you are not conversant with command line tools, here's a video that  shows how to [install code-smore on a Windows PC](https://duanemcguire.nyc3.cdn.digitaloceanspaces.com/wa7pge/code-smore-intro.mp4).   

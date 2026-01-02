@@ -17,3 +17,4 @@ https://ctparks.com/parks/wadsworth-falls-state-park
 
 #### My Hunter Log
 <BR>13:11	2025-09-05	[NR1B](https://qrz.com/db/NR1B)	599	599	CT	14.050	20m	CW	[US-1726](https://pota.app/#/park/US-1726)
+<BR>13:11	2025-09-05	[NR1B](https://qrz.com/db/NR1B)	599	599	CT	14.05	20m	CW	[US-1726](https://pota.app/#/park/US-1726)

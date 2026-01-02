@@ -45,7 +45,7 @@ As of September 2025, I've hunted 300 parks, but have activated only 9. A few im
 <div class="swiper mySwiper" style="width: 800px;">
   <div class="swiper-wrapper">
     {% for image in images %}
-        <div class="swiper-slide"><a href="{{ image[1] }}"><img src="{{ image[0] }}" /></a></div>      
+        <div class="swiper-slide"><a href="{{ image[1] }}"><img loading="lazy" src="{{ image[0] }}" /></a></div>      
     {% endfor %}
   </div>
 </div>    

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Game Tally Sheet — Save & Export</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+h1 { text-align:center; margin-bottom: 12px; }
+.controls { display:flex; gap:8px; justify-content:center; margin-bottom: 14px; flex-wrap:wrap; }
+input[type="text"]{ padding:8px; min-width:220px; font-size:14px; }
+button { padding:6px 10px; cursor:pointer; }
+table { width:100%; border-collapse:collapse; margin-top:8px; }
+th, td { border:1px solid #ddd; padding:8px; text-align:center; }
+th { background:#f4f4f4; }
+.btn-small { padding:4px 8px; margin:2px; }
+.leaderboard { margin-top:18px; padding:12px; border-radius:8px; border:1px solid #ddd; background:#fafafa; }
+.leaderboard h2 { margin:0 0 8px 0; }
+.leaderboard ol { padding-left: 18px; margin:0; }
+.top { font-weight:700; color: #0b6; }
+.no-participants { color:#666; font-style:italic; }
+.actions { display:flex; gap:6px; justify-content:center; }
+@media (max-width:640px) {
+.controls { flex-direction:column; align-items:center; }
+input[type="text"]{ width:100%; max-width:360px; }
+}
+</style>
+</head>
+<body>
+<h1>Game Tally Sheet</h1>
+
+<div class="controls" aria-label="Controls">
+  <input id="nameInput" type="text" placeholder="Enter participant name" aria-label="Participant name">
+  <button id="addBtn" type="button">Add Participant</button>
+  <button id="resetBtn" type="button">Reset All Scores</button>
+  <button id="clearBtn" type="button" title="Remove all participants">Clear All</button>
+  <button id="exportBtn" type="button">Export CSV</button>
+</div>
+
+<table id="participantsTable" aria-label="Participants table">
+<thead>
+<tr>
+<th style="width:40%;">Name</th>
+<th style="width:15%;">Score</th>
+<th style="width:35%;">Points</th>
+<th style="width:10%;">Remove</th>
+</tr>
+</thead>
+<tbody id="participantBody"></tbody>
+</table>
+
+<div class="leaderboard" id="leaderboard" aria-live="polite">
+<h2>Live Leaderboard</h2>
+<div id="leaderContent" class="no-participants">No participants yet.</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let participants = [];
+  let nextId = 1;
+
+  const nameInput = document.getElementById('nameInput');
+  const addBtn = document.getElementById('addBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const clearBtn = document.getElementById('clearBtn');
+  const exportBtn = document.getElementById('exportBtn');
+  const participantBody = document.getElementById('participantBody');
+  const leaderContent = document.getElementById('leaderContent');
+
+  // Load from localStorage
+  function loadData() {
+    const stored = localStorage.getItem('tallyParticipants');
+    if (stored) {
+      participants = JSON.parse(stored);
+      if (participants.length > 0) nextId = Math.max(...participants.map(p => p.id)) + 1;
+    }
+  }
+
+  // Save to localStorage
+  function saveData() {
+    localStorage.setItem('tallyParticipants', JSON.stringify(participants));
+  }
+
+  function addParticipant() {
+    const raw = nameInput.value.trim();
+    if (!raw) { nameInput.focus(); return; }
+    const exists = participants.some(p => p.name.toLowerCase() === raw.toLowerCase());
+    if (exists) {
+      nameInput.value = '';
+      nameInput.placeholder = 'Name already exists — try a different name';
+      setTimeout(() => nameInput.placeholder = 'Enter participant name', 1500);
+      re

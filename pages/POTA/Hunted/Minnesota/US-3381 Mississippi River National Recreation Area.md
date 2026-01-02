@@ -11,7 +11,7 @@ https://www.nps.gov/miss/index.htm
 ![pasted_image.png](/static/pasted_image_0105.png)
 ![pasted_image001.png](/static/pasted_image001_0087.png)
 
-See [US-2482 Fort Snelling State Park](US-2482%20Fort%20Snelling%20State%20Park.md)
+See [US-2482 Fort Snelling State Park](/static/US-2482%20Fort%20Snelling%20State%20Park.md)
 
 #### My Hunter Log
 19:23    2025-03-28    [KC0OIO](https://qrz.com/db/KC0OIO)    59    59    MN    14    20m    SSB    [US-3381](https://pota.app/#/park/US-3381)
