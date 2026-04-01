@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<script>
+const q = new URLSearchParams(location.search).get("q") || "";
+location.href = "https://pota.app/#/profile/" + q.toUpperCase();
+</script>
+</html>

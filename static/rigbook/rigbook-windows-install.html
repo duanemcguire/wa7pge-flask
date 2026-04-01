@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Installing Rigbook on Windows</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --accent: #4f8ef7;
+    --accent2: #7dd3a8;
+    --text: #e8eaf0;
+    --muted: #8890a8;
+    --border: #2e3350;
+    --step-bg: #1e2235;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #0d1b3e 0%, #1a2a5e 60%, #0d2440 100%);
+    padding: 64px 24px 56px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(79,142,247,0.18) 0%, transparent 70%);
+  }
+  header .badge {
+    display: inline-block;
+    background: rgba(79,142,247,0.18);
+    border: 1px solid rgba(79,142,247,0.4);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  header p.subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  header .tags {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  }
+  header .tag {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    color: #cdd5f0;
+  }
+  .version-link {
+    display: inline-block;
+    margin-top: 22px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+  }
+  .version-link:hover { opacity: 0.85; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  /* What is Rigbook */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 32px 0 48px;
+  }
+  .feature-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 18px;
+  }
+  .feature-card .icon { font-size: 1.6rem; margin-bottom: 10px; }
+  .feature-card p { font-size: 0.92rem; color: var(--muted); }
+  .free-badge {
+    text-align: center;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 48px;
+  }
+  .free-badge strong { color: var(--accent2); }
+
+  /* Before you start */
+  .prereqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0 48px;
+  }
+  @media (max-width: 520px) { .prereqs { grid-template-columns: 1fr; } }
+  .prereq-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex; align-items: flex-start; gap: 16px;
+  }
+  .prereq-card .big-icon { font-size: 2.4rem; }
+  .prereq-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+  .prereq-card p { font-size: 0.85rem; color: var(--muted); }
+  .no-code-note {
+    text-align: center;
+    color: var(--accent2);
+    font-size: 0.9rem;
+    margin-bottom: 48px;
+    font-style: italic;
+  }
+
+  /* Steps */
+  h2.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  h2.section-title + p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-bottom: 32px;
+  }
+
+  .step {
+    position: relative;
+    background: var(--step-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 28px 28px 80px;
+    margin-bottom: 20px;
+  }
+  .step-num {
+    position: absolute;
+    left: 22px; top: 24px;
+    width: 36px; height: 36px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem;
+  }
+  .step h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .step p, .step li {
+    font-size: 0.93rem;
+    color: #b8bdd4;
+    margin-bottom: 6px;
+  }
+  .step ol, .step ul { padding-left: 20px; }
+  .step .url-box {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: 'Consolas', monospace;
+    font-size: 0.88rem;
+    color: var(--accent);
+    margin: 10px 0;
+    word-break: break-all;
+  }
+  .step .tip {
+    background: rgba(125,211,168,0.08);
+    border-left: 3px solid var(--accent2);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.87rem;
+    color: var(--accent2);
+  }
+  .step .warning {
+    background: rgba(248,183,71,0.08);
+    border-left: 3px solid #f8b747;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.87rem;
+    color: #f8b747;
+  }
+  .step kbd {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+
+  /* Setup */
+  .setup-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 8px;
+  }
+  .setup-list li {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.93rem;
+    color: #b8bdd4;
+  }
+  .setup-list li:last-child { border-bottom: none; }
+  .setup-list .num {
+    min-width: 24px; height: 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.78rem; font-weight: 700;
+    margin-top: 1px;
+  }
+  code.inline {
+    background: var(--surface2);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.88em;
+    color: var(--accent);
+  }
+
+  /* Summary */
+  .checklist {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 28px;
+    margin: 40px 0 0;
+  }
+  .checklist h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+    color: #b8bdd4;
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .check { color: var(--accent2); font-size: 1.1rem; margin-top: 1px; }
+  .final-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+  .final-note strong { color: var(--accent); }
+
+  section { margin-bottom: 24px; }
+  .section-header {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Installation Guide</div>
+  <h1>Installing Rigbook on Windows</h1>
+  <p class="subtitle">A step-by-step guide for new users</p>
+  <div class="tags">
+    <span class="tag">📓 Ham Radio Logbook</span>
+    <span class="tag">🌲 POTA Spots</span>
+     <span class="tag"> SKCC Skimmer</span>
+    <span class="tag">📡 Radio Tuner</span>
+  </div>
+
+</header>
+
+<main>
+
+  <!-- What is Rigbook -->
+  <div class="section-header">About</div>
+  <h2 class="section-title">What is Rigbook?</h2>
+  <p style="color:var(--muted);margin-bottom:24px;font-size:0.95rem;">A free, open-source ham radio utility that runs in your browser.</p>
+  <div class="features-grid">
+    <div class="feature-card"><div class="icon">📓</div><p>Ham radio contact logbook (QSO)</p></div>
+    <div class="feature-card"><div class="icon">🌲</div><p>POTA spots &amp; park browser</p></div>
+    <div class="feature-card"><div class="icon">📡</div><p>Real-time spots via RBN, HamAlert &amp; SKCC</p></div>
+    <div class="feature-card"><div class="icon">🔧</div><p>Radio tuner via flrig (optional)</p></div>
+    <div class="feature-card"><div class="icon">💾</div><p>ADIF import/export</p></div>
+  </div>
+  <div class="free-badge"><strong>Free &amp; open source</strong> · Works on Windows, macOS, and Linux</div>
+
+  <!-- Before you start -->
+  <div class="section-header">Prerequisites</div>
+  <h2 class="section-title">Before You Start</h2>
+  <p style="color:var(--muted);margin-bottom:24px;font-size:0.95rem;">You only need two things:</p>
+  <div class="prereqs">
+    <div class="prereq-card">
+      <div class="big-icon">💻</div>
+      <div>
+        <h3>A Windows PC</h3>
+        <p>Windows 10 or 11 (64-bit required)</p>
+      </div>
+    </div>
+    <div class="prereq-card">
+      <div class="big-icon">🌐</div>
+      <div>
+        <h3>A Web Browser</h3>
+        <p>Chrome, Edge, or Firefox (already on your PC!)</p>
+      </div>
+    </div>
+  </div>
+  <p class="no-code-note">No programming knowledge required — just click and run!</p>
+
+  <!-- Steps -->
+  <div class="section-header">Installation</div>
+  <h2 class="section-title">Step-by-Step Installation</h2>
+  <p style="color:var(--muted);margin-bottom:24px;font-size:0.95rem;">Follow these steps in order to get Rigbook running.</p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <h3>Go to the Releases Page</h3>
+    <p>Open your web browser and type this address into the address bar, then press Enter:</p>
+    <a target="_blank" href="https://github.com/enigmaCurry/rigbook/releases/latest"><div class="url-box">🔒 https://github.com/enigmaCurry/rigbook/releases/latest</div></a>
+    <p>Click the file <strong>rigbook-windows-amd64.exe</strong> to download it.</p>
+    <div class="tip">💡 Tip: Your browser may ask where to save the file. Choose your Downloads folder.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <h3>Run the Program</h3>
+    <ol>
+      <li>Open your Downloads folder — press <kbd>Win</kbd> + <kbd>E</kbd> and click <strong>Downloads</strong> on the left.</li>
+      <li>Find <strong>rigbook-windows-amd64.exe</strong> (or the amd64 version you downloaded).</li>
+      <li>Double-click the file to run it.</li>
+    </ol>
+    <div class="warning">
+      <strong>Windows SmartScreen Warning — Don't Panic!</strong><br>
+      Windows may say "Windows protected your PC." This is normal for unsigned apps.<br>
+      Click <strong>"More info"</strong> → then click <strong>"Run anyway"</strong> to continue.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <h3>Rigbook Opens in Your Browser!</h3>
+    <p>Rigbook automatically opens your browser when it starts and connects to:</p>
+    <div class="url-box">http://localhost:8073</div>
+    <p>If the browser doesn't open automatically, type that address into your browser manually.</p>
+  </div>
+
+  <!-- First-Time Setup -->
+  <div class="section-header" style="margin-top:40px;">Configuration</div>
+  <h2 class="section-title">First-Time Setup</h2>
+  <p style="color:var(--muted);margin-bottom:20px;font-size:0.95rem;">Do this once after Rigbook first opens:</p>
+  <div class="step">
+    <div class="step-num" style="background:var(--accent2);color:#0f1117;">✦</div>
+    <ul class="setup-list">
+      <li><span class="num">1</span><span>Click the <strong>☰ hamburger menu</strong> (top right) and go to <strong>Settings</strong></span></li>
+      <li><span class="num">2</span><span>Enter your <strong>callsign</strong> (e.g. <code class="inline">KD0ABC</code>)</span></li>
+      <li><span class="num">3</span><span>Enter your <strong>grid square</strong> (e.g. <code class="inline">DN40</code> — find yours at qrz.com)</span></li>
+      <li><span class="num">4</span><span>Click <strong>Save</strong></span></li>
+    </ul>
+    <div class="tip">🔧 Optional: If you use flrig for radio control, set the Host and Port in Settings (default: localhost:12345)</div>
+  </div>
+
+  <!-- Summary Checklist -->
+  <div class="checklist">
+    <h2>🎉 You're All Set! — Quick Recap</h2>
+    <div class="checklist-item"><span class="check">✅</span><span>Went to <strong>github.com/EnigmaCurry/rigbook/releases/latest</strong></span></div>
+    <div class="checklist-item"><span class="check">✅</span><span>Downloaded <code class="inline">rigbook-windows-amd64.exe</code></span></div>
+    <div class="checklist-item"><span class="check">✅</span><span>Double-clicked and ran the program (clicked "Run anyway" if prompted)</span></div>
+    <div class="checklist-item"><span class="check">✅</span><span>Opened <code class="inline">http://localhost:8073</code> in your browser</span></div>
+    <div class="checklist-item"><span class="check">✅</span><span>Entered your callsign and grid square in Settings</span></div>
+    <p class="final-note" style="margin-top:18px;">Now log your first QSO — click <strong>+</strong> in the top right of Rigbook!<br><strong>73 de Good DX!</strong> 📻</p>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -4,13 +4,16 @@ title: Home
 canonical: "/"
 ---
 
-
+<p>This site details my experiences with the big hobby, ham radio.  I am licensed as an amateur (ham) radio operator by the Federal Communications Commission.  My call sign is WA7PGE.</p>
+<p>I was first licensed in 1970 as WN7PGE and then as WA7PGE. I enjoyed many aspects of the hobby.  But I moved on to other interests in 1974.   In 2024 my interest was rekindled, and I'm documenting some of my experiences here.  </p>
+<p>-- <em>Duane McGuire</em> </p>
 
 
 ##### Contact
 [wa7pge@duanemcguire.com](mailto:wa7pge@duanemcguire.com)
 
-**If you have had a recent POTA QSO with WA7PGE, retrieve your digital QSL card at [qsl.wa7pge.com](https://qsl.wa7pge.com).**
+SKCC: 28318T
+LICW: 6925I
 
 ##### Internet Presence
 This site: [wa7pge.com](/)<BR>
