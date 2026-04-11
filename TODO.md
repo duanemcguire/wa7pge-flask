@@ -1,0 +1,10 @@
+- My sitebuilder script was not expecting a full timestamp in the meta data.   Instead of 2025-02-24T02:26:19.839103, supply just 2025-02-24
+- Assure that the My Hunter Log line appears with markdown of '####' preceding it
+- Assure that the My Hunter Log line is on a new line
+- Assure that subsequent log entries appear on a new line
+- Using /indiana/us-10247 lawrence creek state nature preserve/ as a model ... the top has a link to pota.app, then a map that shows the location of the park, then a representative photo of the park.  That's been a fairly standard format for me recently ... with a standard naming convention for the map and photo.  
+- I know you can provide the hyperlink to pota.app
+- I wonder if you can grab the map from pota.app and create the png in my static dir.   I prefer the look of the google map as the model shows,  that may be a stretch for you in the script.  But that would be cool. 
+- I also wonder if you can take a stab at a representative photo. 
+- assure that new log entries are on their own line as rendered by markdown
+- for those parks that are multi jurisdictional, look in the rigbook.db ... if a unique state is there, use that as the state. 
