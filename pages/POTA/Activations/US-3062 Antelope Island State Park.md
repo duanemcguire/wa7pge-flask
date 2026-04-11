@@ -3,6 +3,11 @@ date: '2024-08-24T23:54:24'
 title: US-3062 Antelope Island State Park
 spc: UT
 ---
+**2026-04-03 -- 13 CW QSOs**
+<BR>
+![](/static/2026-04-03%20Antelope%20Island.resized.jpg)
+
+
 
 **2025-03-31 -- 13 CW QSOs**
 Interesting:
