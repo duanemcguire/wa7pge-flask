@@ -23,3 +23,8 @@ Oliver Lee’s home at Dog Canyon Ranch has been completely rebuilt from ruins. 
 23:11    2025-01-02    WI0S    599    599    NM    14.046    20m    CW    US-2709
 23:19    2025-01-03    WI0S    599    599    NM    14.116    20m    CW    US-2709
 15:53    2025-01-04    WI0S    599    599    NM    14.043    20m    CW    US-2709
+<BR>23:11	2025-01-02	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.046	20m	CW	[US-2709](https://pota.app/#/park/US-2709)
+<BR>23:19	2025-01-03	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.1159	20m	CW	[US-2709](https://pota.app/#/park/US-2709)
+<BR>15:53	2025-01-04	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0429	20m	CW	[US-2709](https://pota.app/#/park/US-2709)
+<BR>15:25	2025-01-06	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.046	20m	CW	[US-2709](https://pota.app/#/park/US-2709)
+<BR>15:28	2025-01-07	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0599	20m	CW	[US-2709](https://pota.app/#/park/US-2709)

@@ -22,3 +22,4 @@ https://www.nps.gov/iafl/learn/index.htm
 
 #### My Hunter Log
 17:49:00    2024-12-10    WA0WWW    599    599    WA    14.043    20m    CW    US-3252
+<BR>00:15	2026-03-18	[KD7J](https://qrz.com/db/KD7J)	599	599	OR	14.056	20m	CW	[US-3424](https://pota.app/#/park/US-3424)

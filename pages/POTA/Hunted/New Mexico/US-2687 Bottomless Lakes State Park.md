@@ -18,3 +18,7 @@ The Civilian Conservation Corps (CCC) played an integral role during the Great D
 18:53:07     2024-12-25    WI0S    599    599    NM    14058.000    20m    CW    US-2687
 18:03:20    2024-12-26    WI0S    559    559    NM    14063.400    20m    CW    US-2687
 23:27:00    2024-12-29    WI0S    599    599    NM    14113.400    20m    CW    US-2687
+<BR>01:54	2024-12-23	[WI0S](https://qrz.com/db/WI0S)	449	599	NM	7.0439	40m	CW	[US-2687](https://pota.app/#/park/US-2687)
+<BR>18:53	2024-12-25	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.058	20m	CW	[US-2687](https://pota.app/#/park/US-2687)
+<BR>23:27	2024-12-29	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.1134	20m	CW	[US-2687](https://pota.app/#/park/US-2687)
+<BR>14:11	2025-01-02	[WI0S](https://qrz.com/db/WI0S)	339	599	NM	7.0375	40m	CW	[US-2687](https://pota.app/#/park/US-2687)

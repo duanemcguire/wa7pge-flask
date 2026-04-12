@@ -18,3 +18,4 @@ spc: AZ
 ## My Hunter Log
 2024-03-06 01:03:41 [WD6UCK](https://www.qrz.com/db/WD6UCK)  20M  SSB
 21:27:00    2025-01-23    AB9CA    599    599    AZ    14.0445    20m    CW    US-1052
+<BR>21:27	2025-01-23	[AB9CA](https://qrz.com/db/AB9CA)	599	599	AZ	14.0445	20m	CW	[US-1052](https://pota.app/#/park/US-1052)

@@ -18,3 +18,4 @@ https://stateparks.oregon.gov/index.cfm?do=v.page&id=95
 #### My Hunter Log
 16:32:08    2025-01-26    K7CCH    599    599    OR                20m    CW    [US-10007,](https://pota.app/#/park/US-10007) [US-2816](https://pota.app/#/park/US-2816)
 18:51:22    2025-02-02    [K7FC](https://qrz.com/db/K7FC)    599    599    OR    14.0636    20m    CW    [US-10007](https://pota.app/#/park/US-10007)
+<BR>16:32	2025-01-26	[K7CCH](https://qrz.com/db/K7CCH)	599	599	OR		?m	CW	[US-10007](https://pota.app/#/park/US-10007)

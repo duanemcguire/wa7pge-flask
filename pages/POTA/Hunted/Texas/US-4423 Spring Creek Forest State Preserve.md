@@ -21,3 +21,4 @@ To safeguard the future of Spring Creek Forest and Park Preserve, the Society en
 20:38    2025-04-08    [K5SJC](https://qrz.com/db/K5SJC)    599    599    TX    14.035    20m    CW    [US-4423](https://pota.app/#/park/US-4423)
 <BR>20:38	2025-04-08	[K5SJC](https://qrz.com/db/K5SJC)	599	599	TX	14.035	20m	CW	[US-4423](https://pota.app/#/park/US-4423)
 <BR>15:45	2025-06-19	[K8BTU](https://qrz.com/db/K8BTU)	599	599	TX	14.048	20m	CW	[US-4423](https://pota.app/#/park/US-4423)
+<BR>23:05	2024-12-18	[K5SJC](https://qrz.com/db/K5SJC)	599	599	TX	14.049	20m	CW	[US-4423](https://pota.app/#/park/US-4423)

@@ -25,3 +25,5 @@ This custom card created with QSL Card Creator from  https://www.n1et.com/
 <BR>15:26	2025-04-08	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.052	20m	CW	[US-10272](https://pota.app/#/park/US-10272)
 <BR>18:38	2025-05-03	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.045	20m	CW	[US-10272](https://pota.app/#/park/US-10272)
 <BR>15:41	2025-06-19	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.054	20m	CW	[US-10272](https://pota.app/#/park/US-10272)
+<BR>19:20	2026-03-24	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.052	20m	CW	[US-10272](https://pota.app/#/park/US-10272)
+<BR>16:32	2026-04-04	[K5OHY](https://qrz.com/db/K5OHY)	599	599	TX	14.052	20m	CW	[US-10272](https://pota.app/#/park/US-10272)

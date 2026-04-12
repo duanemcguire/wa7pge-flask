@@ -21,3 +21,5 @@ Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National Ri
 #### My Hunter Log
 
 <BR>01:43	2025-07-12	[NV4H](https://qrz.com/db/NV4H)	599	599	FL	14.0541	20m	CW	[US-0686](https://pota.app/#/park/US-0686)
+<BR>12:15	2025-10-18	[NV4H](https://qrz.com/db/NV4H)	599	599	FL	10.116	30m	CW	[US-0686](https://pota.app/#/park/US-0686)
+<BR>00:19	2025-10-19	[NV4H](https://qrz.com/db/NV4H)	599	599	FL	14.0613	20m	CW	[US-0686](https://pota.app/#/park/US-0686)

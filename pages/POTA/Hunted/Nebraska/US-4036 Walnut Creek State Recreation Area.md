@@ -8,3 +8,4 @@ title: US-4036 Walnut Creek State Recreation Area
 #### My Hunter Log
 
 <BR>14:23	2025-08-03	[W0YEM](https://qrz.com/db/W0YEM)	339	559	NE	14.055	20m	CW	[US-4036](https://pota.app/#/park/US-4036)
+<BR>23:02	2026-03-26	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	14.0325	20m	CW	[US-4036](https://pota.app/#/park/US-4036)

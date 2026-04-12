@@ -12,3 +12,4 @@ I can remember family camping here.
 
 #### My Hunter Log
 16:32:08    2025-01-26    K7CCH    599    599    OR        20m    CW    [US-10007,](https://pota.app/#/park/US-10007) [US-2816](https://pota.app/#/park/US-2816)
+<BR>16:32	2025-01-26	[K7CCH](https://qrz.com/db/K7CCH)	599	599	OR		?m	CW	[US-2816](https://pota.app/#/park/US-2816)

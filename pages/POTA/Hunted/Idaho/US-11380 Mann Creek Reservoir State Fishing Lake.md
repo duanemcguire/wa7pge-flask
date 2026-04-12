@@ -14,3 +14,4 @@ title: US-11380 Mann Creek Reservoir State Fishing Lake
 #### My Hunter Log
 
 21:33:112025-01-23    KA7U    599    599        14.0457    20m    CW    US-11380
+<BR>21:33	2025-01-23	[KA7U](https://qrz.com/db/KA7U)	599	599	OR	14.0457	20m	CW	[US-11380](https://pota.app/#/park/US-11380)

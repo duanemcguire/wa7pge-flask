@@ -21,3 +21,4 @@ Park Elevation 4,751 ft
 
 ## My Hunter Log
 2024-09-09 [N7DZ](https://www.qrz.com/db/N7DZ) 40m CW
+<BR>03:15	2024-09-08	[N7DZ/5](https://qrz.com/db/N7DZ/5)	599	599	NM	7.052	40m	CW	[US-2714](https://pota.app/#/park/US-2714)

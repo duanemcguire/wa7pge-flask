@@ -12,3 +12,4 @@ https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park
 
 #### My Hunter Log
 17:49:00    2024-12-10    WA0WWW    599    599    WA    14.043    20m    CW    US-3252
+<BR>22:44	2025-01-07	[WA0WWW](https://qrz.com/db/WA0WWW)	599	599	WA	14.0469	20m	CW	[US-3280](https://pota.app/#/park/US-3280)

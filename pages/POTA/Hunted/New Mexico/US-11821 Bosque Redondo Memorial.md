@@ -15,3 +15,4 @@ In 2005, the New Mexico State Monuments Division (now Historic Sites) and the Mu
 
 #### My Hunter Log
 22:42    2024-12-18    KE5AKL    599    599    NM    14.033    20m    CW    US-11821
+<BR>22:42	2024-12-18	[KE5AKL](https://qrz.com/db/KE5AKL)	599	599	NM	14.033	20m	CW	[US-11821](https://pota.app/#/park/US-11821)

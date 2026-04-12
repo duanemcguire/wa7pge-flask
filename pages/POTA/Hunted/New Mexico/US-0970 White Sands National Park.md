@@ -16,3 +16,4 @@ All of this, and it is amazing to think that it is a national park that I have n
 
 #### My Hunter Log
 17:39:07    2025-01-13    WI0S    599    599    NM    14.0605    20m    CW    US-0970
+<BR>17:39	2025-01-13	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0605	20m	CW	[US-0970](https://pota.app/#/park/US-0970)

@@ -19,3 +19,4 @@ title: US-3426 Doheny State Beach
 21:18    2025-03-07    [WA6MOW](https://qrz.com/db/WA6MOW)    599    599    CA    14.053    20m    CW    [US-3426](https://pota.app/#/park/US-3426)
 <BR>23:52	2025-02-21	[WA6MOW](https://qrz.com/db/WA6MOW)	599	599	CA	14.045	20m	CW	[US-3426](https://pota.app/#/park/US-3426)
 <BR>21:18	2025-03-07	[WA6MOW](https://qrz.com/db/WA6MOW)	599	599	CA	14.053	20m	CW	[US-3426](https://pota.app/#/park/US-3426)
+<BR>00:10	2026-03-20	[WA6MOW](https://qrz.com/db/WA6MOW)	599	599	CA	14.0356	20m	CW	[US-3426](https://pota.app/#/park/US-3426)

@@ -14,3 +14,4 @@ Depending on the year’s rainfall, you might be treated to a carpet of desert w
 
 #### My Hunter Log
 23:17    2024-12-18    W2NR    599    599    AZ    14.034    20m    CW    US-1061
+<BR>23:17	2024-12-18	[W2NR](https://qrz.com/db/W2NR)	599	599	AZ	14.034	20m	CW	[US-1061](https://pota.app/#/park/US-1061)

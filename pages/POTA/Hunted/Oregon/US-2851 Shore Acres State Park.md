@@ -13,3 +13,4 @@ https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=68
 
 #### My Hunter Log
 23:00    2024-12-16    N7CQR    599    599    OR    14.062    20m    CW    US-2851
+<BR>23:00	2024-12-16	[N7CQR](https://qrz.com/db/N7CQR)	599	599	OR	14.062	20m	CW	[US-2851](https://pota.app/#/park/US-2851)

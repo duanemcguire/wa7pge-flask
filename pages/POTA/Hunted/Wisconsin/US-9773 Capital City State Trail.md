@@ -12,3 +12,4 @@ title: US-9773 Capital City State Trail
 
 
 #### My Hunter Log
+<BR>19:10	2025-05-26	[NA9M](https://qrz.com/db/NA9M)	599	599	WI		?m	CW	[US-9773](https://pota.app/#/park/US-9773)

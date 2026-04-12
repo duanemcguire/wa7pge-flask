@@ -21,6 +21,7 @@ import requests
 
 RIGBOOK_DB = os.path.expanduser("~/.local/rigbook/rigbook.db")
 PAGES_DIR = Path(__file__).parent / "pages" / "POTA" / "Hunted"
+STATIC_DIR = Path(__file__).parent / "static"
 POTA_API = "https://api.pota.app/park/{}"
 
 # Seconds between API calls to be polite
@@ -31,17 +32,17 @@ _park_cache = {}
 
 
 def freq_to_band(freq_str):
-    """Convert a frequency string to a band label like '20M'.
+    """Convert a frequency string to a band label like '20m'.
 
     rigbook stores frequencies in kHz (e.g. 14032.5), but some entries are
     in Hz (e.g. 14032000). Normalize to MHz before lookup.
     """
     if not freq_str:
-        return "?M"
+        return "?m"
     try:
         freq = float(freq_str)
     except ValueError:
-        return "?M"
+        return "?m"
     # Normalize to MHz
     if freq > 100_000:
         freq /= 1_000_000  # Hz → MHz
@@ -49,23 +50,39 @@ def freq_to_band(freq_str):
         freq /= 1_000      # kHz → MHz
 
     bands = [
-        (1.8, 2.0, "160M"),
-        (3.5, 4.0, "80M"),
-        (5.3, 5.4, "60M"),
-        (7.0, 7.3, "40M"),
-        (10.1, 10.15, "30M"),
-        (14.0, 14.35, "20M"),
-        (18.068, 18.168, "17M"),
-        (21.0, 21.45, "15M"),
-        (24.89, 24.99, "12M"),
-        (28.0, 29.7, "10M"),
-        (50.0, 54.0, "6M"),
-        (144.0, 148.0, "2M"),
+        (1.8, 2.0, "160m"),
+        (3.5, 4.0, "80m"),
+        (5.3, 5.4, "60m"),
+        (7.0, 7.3, "40m"),
+        (10.1, 10.15, "30m"),
+        (14.0, 14.35, "20m"),
+        (18.068, 18.168, "17m"),
+        (21.0, 21.45, "15m"),
+        (24.89, 24.99, "12m"),
+        (28.0, 29.7, "10m"),
+        (50.0, 54.0, "6m"),
+        (144.0, 148.0, "2m"),
     ]
     for low, high, label in bands:
         if low <= freq < high:
             return label
-    return "?M"
+    return "?m"
+
+
+def freq_to_mhz(freq_str):
+    """Convert a frequency string to a display string in MHz (e.g. '14.065')."""
+    if not freq_str:
+        return ""
+    try:
+        freq = float(freq_str)
+    except ValueError:
+        return freq_str
+    if freq > 100_000:
+        freq /= 1_000_000  # Hz → MHz
+    elif freq > 100:
+        freq /= 1_000      # kHz → MHz
+    # Format with up to 4 decimal places, strip trailing zeros
+    return f"{freq:.4f}".rstrip("0").rstrip(".")
 
 
 def fetch_park(reference):
@@ -99,16 +116,108 @@ def find_existing_page(reference):
 def log_entry_exists(page_path, date_str, callsign):
     """Return True if a log line with this date and callsign already exists."""
     content = page_path.read_text(encoding="utf-8")
-    # Match lines like: 2024-09-18 [W4LOO](...)
-    pattern = re.compile(
-        r"^\s*" + re.escape(date_str) + r"\s+\[" + re.escape(callsign) + r"\]",
-        re.MULTILINE,
+    for line in content.splitlines():
+        if date_str in line and f"[{callsign}]" in line:
+            return True
+    return False
+
+
+def make_log_line(time_str, date_str, callsign, rst_sent, rst_recv, state, freq_str, band, mode, reference):
+    """Build a formatted log line with <BR> prefix for proper markdown rendering."""
+    freq_mhz = freq_to_mhz(freq_str)
+    pota_url = f"https://pota.app/#/park/{reference}"
+    qrz_url = f"https://qrz.com/db/{callsign}"
+    parts = [
+        time_str,
+        date_str,
+        f"[{callsign}]({qrz_url})",
+        rst_sent or "599",
+        rst_recv or "599",
+        state or "",
+        freq_mhz,
+        band,
+        mode,
+        f"[{reference}]({pota_url})",
+    ]
+    return "<BR>" + "\t".join(parts)
+
+
+def get_state_from_rigbook(reference, db_path):
+    """
+    For multi-jurisdictional parks, look up the unique state from rigbook.db.
+    Returns a 2-letter state abbreviation if unique, else None.
+    """
+    conn = sqlite3.connect(db_path)
+    cur = conn.execute(
+        """
+        SELECT DISTINCT state FROM contacts
+        WHERE (pota_park = ? OR pota_park LIKE ? OR pota_park LIKE ? OR pota_park LIKE ?)
+          AND state IS NOT NULL AND state != ''
+        """,
+        (reference, f"{reference},%", f"%,{reference}", f"%,{reference},%"),
     )
-    return bool(pattern.search(content))
+    states = [row[0].upper() for row in cur.fetchall() if row[0]]
+    conn.close()
+    unique = list(set(states))
+    if len(unique) == 1:
+        return unique[0]
+    return None
 
 
-def make_log_line(date_str, callsign, band, mode):
-    return f"{date_str} [{callsign}](https://qrz.com/db/{callsign}) {band} {mode}"
+def is_multi_jurisdictional(loc_desc):
+    """Return True if locationDesc indicates multiple states (e.g. 'US-VA,US-WV')."""
+    return "," in loc_desc
+
+
+def get_spc_and_location(park, reference, db_path):
+    """
+    Determine the 2-letter state code (spc) and location name for a park.
+    For multi-jurisdictional parks, looks up rigbook.db for a unique state.
+    """
+    loc_desc = park.get("locationDesc", "")
+    location_name = park.get("locationName", "Unknown")
+
+    if is_multi_jurisdictional(loc_desc) or is_multi_jurisdictional(location_name):
+        unique_state = get_state_from_rigbook(reference, db_path)
+        if unique_state:
+            spc = unique_state.upper()
+            # Use the first part of locationName if it's also multi-valued
+            if "," in location_name:
+                location_name = location_name.split(",")[0].strip()
+            return spc, location_name
+
+    spc = loc_desc.split("-")[-1].upper()
+    return spc, location_name
+
+
+def download_map_image(reference, lat, lon, dry_run=False):
+    """
+    Try to download a map image for the park using OpenStreetMap static tiles.
+    Returns the static path string (e.g. '/static/US-1234map.png') if successful, else None.
+    """
+    filename = f"{reference}map.png"
+    dest = STATIC_DIR / filename
+
+    if dest.exists():
+        return f"/static/{filename}"
+
+    if dry_run:
+        return f"/static/{filename}"  # assume it will work
+
+    url = (
+        f"https://staticmap.openstreetmap.de/staticmap.php"
+        f"?center={lat},{lon}&zoom=13&size=600x400"
+        f"&maptype=mapnik&markers={lat},{lon},ol-marker"
+    )
+    try:
+        resp = requests.get(url, timeout=20)
+        resp.raise_for_status()
+        dest.write_bytes(resp.content)
+        print(f"  MAP      downloaded {filename}")
+        return f"/static/{filename}"
+    except Exception as e:
+        print(f"  WARNING: could not download map for {reference}: {e}")
+        return None
 
 
 def append_to_log(page_path, log_line):
@@ -117,51 +226,64 @@ def append_to_log(page_path, log_line):
 
     # Look for an existing Hunter Log heading (flexible: ##, ####, etc.)
     if re.search(r"^#{1,6}\s+My Hunter Log", content, re.MULTILINE):
-        # Append after the last existing log entry (end of file, or before next heading)
         content = content.rstrip() + "\n" + log_line + "\n"
     else:
-        content = content.rstrip() + "\n\n## My Hunter Log\n" + log_line + "\n"
+        content = content.rstrip() + "\n\n#### My Hunter Log\n" + log_line + "\n"
 
     page_path.write_text(content, encoding="utf-8")
 
 
-def create_page(park, state_dir, reference, callsign, band, mode, date_str):
+def create_page(park, reference, callsign, band, mode, date_str, time_str,
+                rst_sent, rst_recv, state, freq, db_path, dry_run=False):
     """Create a new park page with frontmatter and the first log entry."""
     name = park.get("name", reference)
     parktype = park.get("parktypeDesc", "")
     full_name = f"{name} {parktype}".strip()
     website = park.get("website") or ""
-    location_name = park.get("locationName", "Unknown")
+    lat = park.get("latitude")
+    lon = park.get("longitude")
 
-    # Use locationName as the directory (matches existing convention)
+    spc, location_name = get_spc_and_location(park, reference, db_path)
+
     target_dir = PAGES_DIR / location_name
-    target_dir.mkdir(parents=True, exist_ok=True)
+    if not dry_run:
+        target_dir.mkdir(parents=True, exist_ok=True)
 
     filename = f"{reference} {full_name}.md"
     page_path = target_dir / filename
 
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
-    log_line = make_log_line(date_str, callsign, band, mode)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    log_line = make_log_line(time_str, date_str, callsign, rst_sent, rst_recv, state, freq, band, mode, reference)
 
-    spc = park.get("locationDesc", "").split("-")[-1].lower()
+    pota_link = f"[{reference}](https://pota.app/#/park/{reference})"
+
+    # Try to download map image
+    map_img = None
+    if lat and lon:
+        map_img = download_map_image(reference, lat, lon, dry_run=dry_run)
 
     lines = [
         "---",
-        f"date: '{now}'",
+        f"date: '{today}'",
         f"title: {reference} {full_name}",
         f"spc: {spc}",
         "---",
         "",
+        pota_link,
+        "",
     ]
-    if website:
-        lines += [website, ""]
+
+    if map_img:
+        lines += [f"![]({map_img})", ""]
+
     lines += [
-        "## My Hunter Log",
+        "#### My Hunter Log",
         log_line,
         "",
     ]
 
-    page_path.write_text("\n".join(lines), encoding="utf-8")
+    if not dry_run:
+        page_path.write_text("\n".join(lines), encoding="utf-8")
     return page_path
 
 
@@ -188,7 +310,7 @@ def get_pota_contacts(db_path):
     conn.row_factory = sqlite3.Row
     cur = conn.execute(
         """
-        SELECT id, call, freq, mode, pota_park, timestamp
+        SELECT id, call, freq, mode, rst_sent, rst_recv, state, pota_park, timestamp
         FROM contacts
         WHERE pota_park IS NOT NULL AND pota_park != ''
         ORDER BY timestamp
@@ -216,8 +338,12 @@ def main():
         callsign = row["call"].strip().upper()
         freq = row["freq"] or ""
         mode = (row["mode"] or "").upper()
+        rst_sent = row["rst_sent"] or "599"
+        rst_recv = row["rst_recv"] or "599"
+        state = (row["state"] or "").upper()
         ts = row["timestamp"]
-        date_str = ts[:10]  # YYYY-MM-DD
+        date_str = ts[:10]          # YYYY-MM-DD
+        time_str = ts[11:16]        # HH:MM
         band = freq_to_band(freq)
 
         existing = find_existing_page(reference)
@@ -230,7 +356,7 @@ def main():
             if park is None:
                 print(f"  SKIP {reference} — API unavailable")
                 continue
-            log_line = make_log_line(date_str, callsign, band, mode)
+            log_line = make_log_line(time_str, date_str, callsign, rst_sent, rst_recv, state, freq, band, mode, reference)
             if not dry_run:
                 append_to_log(existing, log_line)
             print(f"  {'WOULD APPEND' if dry_run else 'APPENDED'} {reference}: {log_line}")
@@ -241,13 +367,16 @@ def main():
                 print(f"  SKIP {reference} — API unavailable, cannot create page")
                 continue
             if not dry_run:
-                page_path = create_page(park, PAGES_DIR, reference, callsign, band, mode, date_str)
+                page_path = create_page(
+                    park, reference, callsign, band, mode, date_str, time_str,
+                    rst_sent, rst_recv, state, freq, RIGBOOK_DB,
+                )
                 print(f"  CREATED  {page_path.relative_to(Path(__file__).parent)}")
             else:
                 name = park.get("name", reference)
                 parktype = park.get("parktypeDesc", "")
-                location_name = park.get("locationName", "Unknown")
-                print(f"  WOULD CREATE {location_name}/{reference} {name} {parktype}.md")
+                spc, location_name = get_spc_and_location(park, reference, RIGBOOK_DB)
+                print(f"  WOULD CREATE {location_name}/{reference} {name} {parktype}.md  (spc={spc})")
             new_pages += 1
 
     verb = "would be" if dry_run else "were"
