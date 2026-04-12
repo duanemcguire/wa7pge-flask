@@ -25,3 +25,5 @@ Minneopa State Park is a state park in the U.S. state of Minnesota. It was estab
 22:31    2025-04-06    [N0ANE](https://qrz.com/db/N0ANE)    599    599    MN    14.0615    20m    CW    [US-2510](https://pota.app/#/park/US-2510)
 <BR>22:31	2025-04-06	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	14.0615	20m	CW	[US-2510](https://pota.app/#/park/US-2510)
 <BR>20:46	2025-09-20	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	14.0635	20m	CW	[US-2510](https://pota.app/#/park/US-2510)
+<BR>17:30	2024-12-22	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	14.0675	20m	CW	[US-2510](https://pota.app/#/park/US-2510)
+<BR>21:49	2025-01-05	[N0ANE](https://qrz.com/db/N0ANE)	599	599	MN	21.0374	15m	CW	[US-2510](https://pota.app/#/park/US-2510)

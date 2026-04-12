@@ -16,3 +16,4 @@ title: US-3568 Silver Strand State Beach
 22:08    2025-02-06    WT5O    559    559    CA    14.046    20m    CW    [US-3568](https://pota.app/#/park/US-3568)
 22:50    2025-02-16    [WT5O](https://qrz.com/db/WT5O)    599    599    CA    14.122    20m    CW    [US-3568](https://pota.app/#/park/US-3568)
 <BR>22:50	2025-02-16	[WT5O](https://qrz.com/db/WT5O)	599	599	CA	14.122	20m	CW	[US-3568](https://pota.app/#/park/US-3568)
+<BR>22:08	2025-02-06	[WT5O](https://qrz.com/db/WT5O)	559	559	CA	14.046	20m	CW	[US-3568](https://pota.app/#/park/US-3568)

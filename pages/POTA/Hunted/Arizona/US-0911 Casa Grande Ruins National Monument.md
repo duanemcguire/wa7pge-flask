@@ -15,3 +15,7 @@ The national monument consists of the ruins of multiple structures surrounded by
 17:49:39    2024-12-22    VE7VAK/W7    599    599    AZ    14.066    20m    CW    US-0911
 20:07:24    2024-12-31    VE7VAK/W7    599    599    AZ    14.055    20m    CW    US-0911
 17:16:43    2025-01-13    VE7VAK/W7    599    599    AZ    14.043    20m    CW    US-0911
+<BR>17:49	2024-12-22	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.066	20m	CW	[US-0911](https://pota.app/#/park/US-0911)
+<BR>20:07	2024-12-31	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.055	20m	CW	[US-0911](https://pota.app/#/park/US-0911)
+<BR>15:25	2025-01-06	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.0621	20m	CW	[US-0911](https://pota.app/#/park/US-0911)
+<BR>17:16	2025-01-13	[VE7VAK/W7](https://qrz.com/db/VE7VAK/W7)	599	599	AZ	14.043	20m	CW	[US-0911](https://pota.app/#/park/US-0911)

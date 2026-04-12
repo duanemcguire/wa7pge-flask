@@ -29,3 +29,8 @@ https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-we
 <BR>14:47	2025-09-20	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	14.0517	20m	CW	[US-4011](https://pota.app/#/park/US-4011)
 <BR>22:54	2025-10-10	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	18.0825	17m	CW	[US-4011](https://pota.app/#/park/US-4011)
 <BR>23:55	2025-12-08	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	14.032	20m	CW	[US-4011](https://pota.app/#/park/US-4011)
+<BR>22:59	2024-12-18	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	14.035	20m	CW	[US-4011](https://pota.app/#/park/US-4011)
+<BR>22:01	2025-01-05	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	18.0905	17m	CW	[US-4011](https://pota.app/#/park/US-4011)
+<BR>22:25	2025-01-07	[WB0RLJ](https://qrz.com/db/WB0RLJ)	559	559	NE	21.0365	15m	CW	[US-4011](https://pota.app/#/park/US-4011)
+<BR>00:20	2025-12-31	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	10.1185	30m	CW	[US-4011](https://pota.app/#/park/US-4011)
+<BR>23:43	2026-01-14	[WB0RLJ](https://qrz.com/db/WB0RLJ)	599	599	NE	14.0325	20m	CW	[US-4011](https://pota.app/#/park/US-4011)

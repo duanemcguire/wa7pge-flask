@@ -11,3 +11,4 @@ Three historic trails began at Independence, Missouri:  Santa Fe, California, an
 
 #### My Hunter Log
 22:50    2024-12-18    WQ0A    559    559        14.068    20m    CW    US-4579
+<BR>22:50	2024-12-18	[WQ0A](https://qrz.com/db/WQ0A)	559	559	KS	14.068	20m	CW	[US-4579](https://pota.app/#/park/US-4579)

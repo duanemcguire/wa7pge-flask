@@ -15,3 +15,4 @@ title: US-6532 Erie Canalway Corridor National Heritage Area
 #### My Hunter Log
 <BR>20:17	2025-09-21	[K2UPD](https://qrz.com/db/K2UPD)	339	339	NY	14.0575	20m	CW	[US-6532](https://pota.app/#/park/US-6532)
 <BR>15:08	2025-11-08	[KB2GKC](https://qrz.com/db/KB2GKC)	599	599	NY	14.062	20m	CW	[US-6532](https://pota.app/#/park/US-6532)
+<BR>16:44	2026-03-29	[W2ELS](https://qrz.com/db/W2ELS)	599	599	NY	28.061	10m	CW	[US-6532](https://pota.app/#/park/US-6532)

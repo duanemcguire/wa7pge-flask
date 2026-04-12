@@ -11,3 +11,4 @@ title: US-3469 Manresa State Beach
 
 #### My Hunter Log
 22:1020    25-01-05    KN6BAZ    599    599    CA    14.064    20m    CW    US-3469
+<BR>22:10	2025-01-05	[KN6BAZ](https://qrz.com/db/KN6BAZ)	599	599	CA	14.064	20m	CW	[US-3469](https://pota.app/#/park/US-3469)

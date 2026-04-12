@@ -14,3 +14,4 @@ title: US-12398 Olathe Prairie Center State Preserve
 
 #### My Hunter Log
 <BR>18:13	2025-12-26	[N0VIG](https://qrz.com/db/N0VIG)	599	599	KS	14.0585	20m	CW	[US-12398](https://pota.app/#/park/US-12398)
+<BR>18:08	2026-01-23	[N0VIG](https://qrz.com/db/N0VIG)	599	599	KS	14.0605	20m	CW	[US-12398](https://pota.app/#/park/US-12398)

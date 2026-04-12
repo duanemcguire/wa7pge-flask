@@ -11,3 +11,4 @@ title: US-2689 Caballo Lake State Park
 #### My Hunter Log
 20:19    2025-02-18    [AB9CA](https://qrz.com/db/AB9CA)    599    599    NM    14.0455    20m    CW    [US-2689](https://pota.app/#/park/US-2689)
 <BR>20:19	2025-02-18	[AB9CA](https://qrz.com/db/AB9CA)	599	599	NM	14.0455	20m	CW	[US-2689](https://pota.app/#/park/US-2689)
+<BR>16:44	2025-01-26	[WI0S](https://qrz.com/db/WI0S)	599	599	NM	14.0605	20m	CW	[US-2689](https://pota.app/#/park/US-2689)

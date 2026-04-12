@@ -17,3 +17,4 @@ In November 1974, Gary Tenen and Randy Tufts were exploring the limestone hills 
 23:06    2025-03-05    [WI0S](https://qrz.com/db/WI0S)    599    599    AZ    14.056    20m    CW    [US-1059](https://pota.app/#/park/US-1059)
 
 <BR>23:06	2025-03-05	[WI0S](https://qrz.com/db/WI0S)	599	599	AZ	14.056	20m	CW	[US-1059](https://pota.app/#/park/US-1059)
+<BR>17:29	2025-01-18	[KT7RC](https://qrz.com/db/KT7RC)	599	599	AZ	14.045	20m	CW	[US-1059](https://pota.app/#/park/US-1059)

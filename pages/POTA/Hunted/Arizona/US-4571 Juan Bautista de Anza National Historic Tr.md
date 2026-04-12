@@ -17,3 +17,6 @@ https://www.nps.gov/juba/index.htm
 Tortolita Radio Club was formed in September, 2020.  The club welcomes members regardless of affiliation with other clubs.  We have no dues, no assessments, no assets, no regular meetings, and definitely no repeaters.  We are a bunch of friendly folks who get together to indulge our passion for HF ham radio.  We have done monthly on-air events such as Field Day, contests, Special Event Stations, National Parks, SOTA, POTA.  We have done outings for 8 years. 
 
 00:15     2024-12-21     N6RUN    559    599        14.061    20m    CW    US-4571
+
+#### My Hunter Log
+<BR>00:15	2024-12-21	[N6RUN](https://qrz.com/db/N6RUN)	559	599	CA	14.061	20m	CW	[US-4571](https://pota.app/#/park/US-4571)

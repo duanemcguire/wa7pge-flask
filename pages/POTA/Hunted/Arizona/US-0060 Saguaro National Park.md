@@ -14,3 +14,4 @@ spc: AZ
 19:29:27     2025-02-06    [KN6DR](https://qrz.com/db/KN6DR)    599    599    AZ    14.0615    20m    CW    [US-0060](https://pota.app/#/park/US-0060)
 
 19:42    2025-03-28    [WB1LOV](https://qrz.com/db/WB1LOV)    59    59    AZ    14    20m    SSB    [US-0060](https://pota.app/#/park/US-0060)
+<BR>19:33	2026-03-24	[KN6BAZ](https://qrz.com/db/KN6BAZ)	599	599	AZ	14.062	20m	CW	[US-0060](https://pota.app/#/park/US-0060)

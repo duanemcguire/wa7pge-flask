@@ -23,3 +23,5 @@ Also known as [Fort Harrison State Park](https://www.google.com/maps/place/Fort+
 <BR>12:11	2025-10-19	[KB9RPG](https://qrz.com/db/KB9RPG)	599	599	IN	7.064	40m	CW	[US-10247](https://pota.app/#/park/US-10247)
 <BR>14:10	2025-12-12	[KB9RPG](https://qrz.com/db/KB9RPG)	339	339	IN	14.064	20m	CW	[US-10247](https://pota.app/#/park/US-10247)
 <BR>13:19	2025-12-26	[KB9RPG](https://qrz.com/db/KB9RPG)	599	599	IN	7.0615	40m	CW	[US-10247](https://pota.app/#/park/US-10247)
+<BR>13:02	2026-02-05	[KB9RPG](https://qrz.com/db/KB9RPG)	599	599	IN	7.0575	40m	CW	[US-10247](https://pota.app/#/park/US-10247)
+<BR>12:12	2026-04-04	[KB9RPG](https://qrz.com/db/KB9RPG)	599	599	IN	7.0535	40m	CW	[US-10247](https://pota.app/#/park/US-10247)

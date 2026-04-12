@@ -12,3 +12,4 @@ https://parks.ky.gov/parks/find-a-park/my-old-kentucky-home-state-park-7821
 
 #### My Hunter Log
 20:55     2024-12-17    N4IN    359    359    KY    14.0615    20m    CW    US-1267
+<BR>20:55	2024-12-17	[N4IN](https://qrz.com/db/N4IN)	599	599	KY	14.0615	20m	CW	[US-1267](https://pota.app/#/park/US-1267)

@@ -14,3 +14,4 @@ Lyons Wildlife Area is a 135-acre property located 2 miles north of Lake Geneva 
 
 #### My Hunter Log
 17:03    2025-03-31    [AC9OT](https://qrz.com/db/AC9OT)    15M    CW    [US-11961](https://pota.app/#/park/US-11961)
+<BR>19:01	2025-05-26	[AC9OT](https://qrz.com/db/AC9OT)	599	599	WI		?m	CW	[US-11961](https://pota.app/#/park/US-11961)
