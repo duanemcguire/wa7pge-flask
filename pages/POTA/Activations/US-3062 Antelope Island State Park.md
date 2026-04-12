@@ -24,7 +24,7 @@ It was fun and challenging.  I got out to the island by 9 am before it got too h
 
 ![pasted_image005.png](/static/pasted_image005_0002.png)
 
-[Antelope Island Description](../Parks_Hunted/Utah/US-3062%20Antelope%20Island%20State%20Park.md)
+[Antelope Island Description](/pota/hunted/utah/us-3062 antelope island state park/)
 
 
 
