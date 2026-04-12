@@ -6,5 +6,8 @@ spc: AZ
 
 [US-0760](https://pota.app/#/park/US-0760)
 
+![](/static/US-0760map.png)
+![](/static/US-0760.png)
+
 #### My Hunter Log
 <BR>18:01	2025-01-16	[W1ND](https://qrz.com/db/W1ND)	359	599	AZ	14.053	20m	CW	[US-0760](https://pota.app/#/park/US-0760)
