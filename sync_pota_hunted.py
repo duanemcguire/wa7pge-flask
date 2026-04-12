@@ -21,7 +21,6 @@ import requests
 
 RIGBOOK_DB = os.path.expanduser("~/.local/rigbook/rigbook.db")
 PAGES_DIR = Path(__file__).parent / "pages" / "POTA" / "Hunted"
-STATIC_DIR = Path(__file__).parent / "static"
 POTA_API = "https://api.pota.app/park/{}"
 
 # Seconds between API calls to be polite
@@ -190,35 +189,6 @@ def get_spc_and_location(park, reference, db_path):
     return spc, location_name
 
 
-def download_map_image(reference, lat, lon, dry_run=False):
-    """
-    Try to download a map image for the park using OpenStreetMap static tiles.
-    Returns the static path string (e.g. '/static/US-1234map.png') if successful, else None.
-    """
-    filename = f"{reference}map.png"
-    dest = STATIC_DIR / filename
-
-    if dest.exists():
-        return f"/static/{filename}"
-
-    if dry_run:
-        return f"/static/{filename}"  # assume it will work
-
-    url = (
-        f"https://staticmap.openstreetmap.de/staticmap.php"
-        f"?center={lat},{lon}&zoom=13&size=600x400"
-        f"&maptype=mapnik&markers={lat},{lon},ol-marker"
-    )
-    try:
-        resp = requests.get(url, timeout=20)
-        resp.raise_for_status()
-        dest.write_bytes(resp.content)
-        print(f"  MAP      downloaded {filename}")
-        return f"/static/{filename}"
-    except Exception as e:
-        print(f"  WARNING: could not download map for {reference}: {e}")
-        return None
-
 
 def append_to_log(page_path, log_line):
     """Append a log line to the Hunter Log section, creating the section if absent."""
@@ -239,9 +209,6 @@ def create_page(park, reference, callsign, band, mode, date_str, time_str,
     name = park.get("name", reference)
     parktype = park.get("parktypeDesc", "")
     full_name = f"{name} {parktype}".strip()
-    website = park.get("website") or ""
-    lat = park.get("latitude")
-    lon = park.get("longitude")
 
     spc, location_name = get_spc_and_location(park, reference, db_path)
 
@@ -257,11 +224,6 @@ def create_page(park, reference, callsign, band, mode, date_str, time_str,
 
     pota_link = f"[{reference}](https://pota.app/#/park/{reference})"
 
-    # Try to download map image
-    map_img = None
-    if lat and lon:
-        map_img = download_map_image(reference, lat, lon, dry_run=dry_run)
-
     lines = [
         "---",
         f"date: '{today}'",
@@ -271,12 +233,6 @@ def create_page(park, reference, callsign, band, mode, date_str, time_str,
         "",
         pota_link,
         "",
-    ]
-
-    if map_img:
-        lines += [f"![]({map_img})", ""]
-
-    lines += [
         "#### My Hunter Log",
         log_line,
         "",

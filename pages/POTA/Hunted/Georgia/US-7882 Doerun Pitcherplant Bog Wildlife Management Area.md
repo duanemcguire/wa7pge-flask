@@ -1,0 +1,10 @@
+---
+date: '2026-04-12'
+title: US-7882 Doerun Pitcherplant Bog Wildlife Management Area
+spc: GA
+---
+
+[US-7882](https://pota.app/#/park/US-7882)
+
+#### My Hunter Log
+<BR>21:57	2025-05-20	[KO4NLL](https://qrz.com/db/KO4NLL)	339	339	GA	14.055	20m	CW	[US-7882](https://pota.app/#/park/US-7882)
