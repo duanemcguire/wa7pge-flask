@@ -20,7 +20,7 @@ from pathlib import Path
 from collections import defaultdict
 
 BASE_DIR   = Path(__file__).parent
-WORK_DIR   = BASE_DIR / "static" / "work"
+WORK_DIR   = Path("/home/duane/Pictures/Screenshots/")
 STATIC_DIR = BASE_DIR / "static"
 PAGES_DIR  = BASE_DIR / "pages" / "POTA" / "Hunted"
 

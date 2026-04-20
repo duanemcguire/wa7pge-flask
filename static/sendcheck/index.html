@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CW Fistcheck</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <h1>CW Fistcheck</h1>
+    <p>Analyze your Morse code keying accuracy</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="panels">
+    <!-- Source text -->
+    <div class="panel">
+      <div class="panel-title">
+        Source Text
+        <button class="load-btn" onclick="loadText()">Load ↑</button>
+      </div>
+      <textarea id="sourceText">can you help</textarea>
+    </div>
+
+    <!-- Current line display -->
+    <div class="panel display-panel">
+      <div class="line-counter" id="lineCounter">Line 1/1</div>
+      <div id="currentLine"></div>
+    </div>
+  </div>
+
+  <!-- Tune controls -->
+  <div class="tune-controls">
+
+    <div class="ctrl-group">
+      <label>♪ Pitch</label>
+      <input type="range" id="pitch" min="400" max="1200" value="700" step="10">
+      <span class="pitch-val" id="pitchVal">700 Hz</span>
+    </div>
+
+    <div class="ctrl-group">
+      <label>Speed (WPM)</label>
+      <input type="number" id="wpm" value="17" min="5" max="60" step="0.5">
+    </div>
+
+    <div class="ctrl-group">
+      <label>Word Spacing (×)</label>
+      <input type="number" id="wordSpacing" value="1.0" min="0.8" max="3.0" step="0.1">
+    </div>
+
+    <div class="ctrl-group">
+      <label>🎤 Mic Sensitivity</label>
+      <input type="range" id="sensitivity" min="0.05" max="1" value="0.4" step="0.01"
+             title="Slide right (higher) for acoustic/mic pickup — raises detection threshold, which helps cut through room reverb between elements. Slide left if signal is not being detected.">
+    </div>
+
+  </div>
+
+  <!-- Visualization -->
+  <div class="panel viz-panel">
+    <div class="viz-legend">
+      <span class="ref">▬ Reference (perfect)</span>
+      <span class="user">▬ Your sending</span>
+    </div>
+    <canvas id="vizCanvas"></canvas>
+    <div class="scale-bar" id="scaleBar" title="Drag left/right to scale the time axis">
+      <span class="scale-bar-label" id="scaleLabel">◂ 7.0 seconds/row ▸</span>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button class="btn" onclick="prevLine()" title="Previous line">&#8249;</button>
+    <button class="btn" id="startBtn" onclick="startStop()">⟳ Start Listening</button>
+    <button class="btn" onclick="nextLine()" title="Next line">&#8250;</button>
+    <button class="btn btn-play" id="playRefBtn"  onclick="playReference()" title="Play perfect reference CW">▶ Reference</button>
+    <button class="btn btn-play" id="playUserBtn" onclick="playUser()"      title="Play back your recorded sending">▶ Your sending</button>
+  </div>
+
+</main>
+
+<script src="js/morse.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

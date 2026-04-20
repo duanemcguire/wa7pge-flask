@@ -1,0 +1,283 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #ffffff;
+  color: #7f888f;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  font-size: 13pt;
+  line-height: 1.65;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+header {
+  padding: 1.25em 2em;
+  background: #f5f6f7;
+  border-bottom: 5px solid #f56a6a;
+}
+
+.brand h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  color: #3d4449;
+}
+.brand p {
+  font-size: 0.72em;
+  color: #7f888f;
+  margin-top: 2px;
+}
+
+.tune-controls {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.75em 1em;
+  background: #f5f6f7;
+  border: 1px solid rgba(210, 215, 217, 0.75);
+  border-radius: 0.375em;
+}
+
+.ctrl-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.ctrl-group label {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.58em;
+  color: #7f888f;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  white-space: nowrap;
+}
+
+.ctrl-group input[type="range"] {
+  width: 110px;
+  accent-color: #f56a6a;
+  cursor: pointer;
+}
+
+.ctrl-group input[type="number"] {
+  width: 72px;
+  background: #ffffff;
+  border: 1px solid rgba(210, 215, 217, 0.75);
+  border-radius: 0.375em;
+  color: #3d4449;
+  font-family: inherit;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 4px 6px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.ctrl-group input[type="number"]:focus {
+  outline: none;
+  border-color: #f56a6a;
+  box-shadow: 0 0 0 2px rgba(245, 106, 106, 0.15);
+}
+
+.pitch-val {
+  font-size: 0.7em;
+  color: #9fa3a6;
+}
+
+/* ── Main layout ─────────────────────────────────────── */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid rgba(210, 215, 217, 0.75);
+  border-radius: 0.375em;
+  padding: 1em;
+}
+
+/* Source text */
+.panel-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.65em;
+  color: #3d4449;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin-bottom: 0.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sourceText {
+  width: 100%;
+  height: 130px;
+  background: #f9fafb;
+  border: 1px solid rgba(210, 215, 217, 0.75);
+  border-radius: 0.375em;
+  color: #3d4449;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85em;
+  padding: 0.5em 0.75em;
+  resize: vertical;
+  line-height: 1.65;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#sourceText:focus {
+  outline: none;
+  border-color: #f56a6a;
+  box-shadow: 0 0 0 2px rgba(245, 106, 106, 0.15);
+}
+
+.load-btn {
+  background: transparent;
+  border: 2px solid #f56a6a;
+  color: #f56a6a;
+  border-radius: 0.375em;
+  padding: 0.2em 0.75em;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.load-btn:hover { background: rgba(245, 106, 106, 0.08); }
+
+/* Current line display */
+.display-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 155px;
+}
+
+.line-counter {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 0.65em;
+  color: #9fa3a6;
+}
+
+#currentLine {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  color: #3d4449;
+  text-align: center;
+  word-break: break-all;
+  padding: 0 16px;
+}
+
+/* ── Visualization panel ─────────────────────────────── */
+.viz-panel {
+  padding: 0.75em 1em;
+}
+
+.viz-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 0.72em;
+  margin-bottom: 0.5em;
+}
+.viz-legend .ref  { color: #4ade80; }
+.viz-legend .user { color: #f87171; }
+
+#vizCanvas {
+  display: block;
+  width: 100%;
+  border-radius: 0.25em;
+  /* height is set dynamically by Visualizer */
+}
+
+.scale-bar {
+  margin-top: 6px;
+  height: 32px;
+  background: #f5f6f7;
+  border: 1px solid rgba(210, 215, 217, 0.75);
+  border-radius: 0.375em;
+  cursor: ew-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.scale-bar:hover        { background: #eef0f2; border-color: #f56a6a; }
+.scale-bar.dragging     { background: #eef0f2; border-color: #f56a6a; }
+
+.scale-bar-label {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  color: #7f888f;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+.scale-bar:hover .scale-bar-label,
+.scale-bar.dragging .scale-bar-label { color: #f56a6a; }
+
+/* ── Controls bar ────────────────────────────────────── */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5em 0 0.75em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 1.5em;
+  height: 3.5em;
+  border-radius: 0.375em;
+  border: 2px solid rgba(210, 215, 217, 0.75);
+  background: transparent;
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  min-width: 44px;
+}
+.btn:hover { background: rgba(210, 215, 217, 0.2); border-color: #3d4449; }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
+
+#startBtn {
+  background: #f56a6a;
+  color: #ffffff;
+  border-color: #f56a6a;
+  min-width: 160px;
+}
+#startBtn:hover { background: #e85555; border-color: #e85555; }
+#startBtn.recording {
+  background: #3d4449;
+  color: #ffffff;
+  border-color: #3d4449;
+}
+#startBtn.recording:hover { background: #2d3439; border-color: #2d3439; }
+
+.btn-play {
+  border-color: #f56a6a;
+  color: #f56a6a;
+}
+.btn-play:hover { background: rgba(245, 106, 106, 0.08); border-color: #f56a6a; }
