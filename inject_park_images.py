@@ -69,7 +69,6 @@ def find_page(reference):
 
 def page_has_images(content):
     """Return True if the page body (after frontmatter) already has an image tag."""
-    # Strip frontmatter
     body = re.sub(r"^---\n.*?\n---\n", "", content, count=1, flags=re.DOTALL)
     return "![" in body
 
@@ -82,6 +81,54 @@ def build_img_tags(map_file, photo_files):
     for f in photo_files:
         tags.append(f"![](/static/{f.name})")
     return tags
+
+
+def find_text_file(reference):
+    """Return Path to {reference}.txt in WORK_DIR if it exists, else None."""
+    candidate = WORK_DIR / (reference + ".txt")
+    return candidate if candidate.exists() else None
+
+
+INJECTED_DIV_ID = "injected_by_script"
+
+
+def inject_text_block(page_path, text_content, dry_run):
+    """Insert or replace a <div id="injected_by_script"> before the Hunter Log heading."""
+    content = page_path.read_text(encoding="utf-8")
+    div_open = f'<div id="{INJECTED_DIV_ID}" style="margin-bottom: 10px;">'
+    inner = text_content.strip()
+    new_block = f"{div_open}\n{inner}\n</div>"
+
+    if div_open in content:
+        # Replace existing block in-place
+        new_content = re.sub(
+            re.escape(div_open) + r".*?</div>",
+            new_block,
+            content,
+            count=1,
+            flags=re.DOTALL,
+        )
+    else:
+        lines = content.splitlines(keepends=True)
+        hunter_log = None
+        for i, line in enumerate(lines):
+            if re.match(r"^#{1,6}\s+My Hunter Log", line.strip()):
+                hunter_log = i
+                break
+
+        pos = hunter_log if hunter_log is not None else len(lines)
+
+        block_lines = (new_block + "\n\n").splitlines(keepends=True)
+        if pos > 0 and lines[pos - 1].strip() != "":
+            block_lines = ["\n"] + block_lines
+
+        new_lines = lines[:pos] + block_lines + lines[pos:]
+        new_content = "".join(new_lines)
+
+    if not dry_run:
+        page_path.write_text(new_content, encoding="utf-8")
+
+    return new_content
 
 
 def inject_images(page_path, img_tags, dry_run):
@@ -146,11 +193,21 @@ def main():
         print("DRY RUN — no files will be changed\n")
 
     groups = parse_work_images()
+
+    # Also include parks that have only a .txt file in WORK_DIR
+    for f in sorted(WORK_DIR.iterdir()):
+        if f.suffix == ".txt":
+            m = re.match(r"^([A-Z]{2}-\d+)$", f.stem, re.IGNORECASE)
+            if m:
+                ref = m.group(1).upper()
+                if ref not in groups:
+                    groups[ref] = {"map": None, "photos": []}
+
     if not groups:
-        print("No images found in static/work/")
+        print("Nothing to process in WORK_DIR.")
         return
 
-    print(f"Found images for {len(groups)} park(s) in static/work/\n")
+    print(f"Found work for {len(groups)} park(s)\n")
 
     injected = 0
     skipped  = 0
@@ -167,26 +224,41 @@ def main():
             continue
 
         content = page.read_text(encoding="utf-8")
-        if page_has_images(content):
-            print(f"  {ref}: page already has images — skipping")
+        did_something = False
+
+        if not all_files:
+            pass  # txt-only park, no images to inject
+        elif page_has_images(content):
+            print(f"  {ref}: page already has images — skipping image injection")
+        else:
+            img_tags = build_img_tags(map_file, photo_files)
+            inject_images(page, img_tags, dry_run)
+
+            action = "WOULD INJECT" if dry_run else "INJECTED"
+            print(f"  {ref}: {action} images into {page.relative_to(BASE_DIR)}")
+            for tag in img_tags:
+                print(f"    {tag}")
+
+            # Move images to static/
+            for f in all_files:
+                move_image(f, dry_run)
+                verb = "WOULD MOVE" if dry_run else "MOVED"
+                print(f"    {verb} {f.name} → static/")
+
+            did_something = True
+
+        txt_file = find_text_file(ref)
+        if txt_file:
+            text_content = txt_file.read_text(encoding="utf-8")
+            inject_text_block(page, text_content, dry_run)
+            action = "WOULD INJECT" if dry_run else "INJECTED"
+            print(f"  {ref}: {action} text block from {txt_file.name}")
+            did_something = True
+
+        if did_something:
+            injected += 1
+        else:
             skipped += 1
-            continue
-
-        img_tags = build_img_tags(map_file, photo_files)
-        inject_images(page, img_tags, dry_run)
-
-        action = "WOULD INJECT" if dry_run else "INJECTED"
-        print(f"  {ref}: {action} into {page.relative_to(BASE_DIR)}")
-        for tag in img_tags:
-            print(f"    {tag}")
-
-        # Move images to static/
-        for f in all_files:
-            moved = move_image(f, dry_run)
-            verb = "WOULD MOVE" if dry_run else "MOVED"
-            print(f"    {verb} {f.name} → static/")
-
-        injected += 1
 
     verb = "would be" if dry_run else "were"
     print(f"\nDone. {injected} page(s) {verb} updated, {skipped} skipped.")

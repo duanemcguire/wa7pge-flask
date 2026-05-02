@@ -19,7 +19,7 @@ from pathlib import Path
 
 import requests
 
-RIGBOOK_DB = os.path.expanduser("~/.local/rigbook/rigbook.db")
+RIGBOOK_DB = os.path.expanduser("~/.local/share/rigbook/rigbook.db")
 PAGES_DIR = Path(__file__).parent / "pages" / "POTA" / "Hunted"
 POTA_API = "https://api.pota.app/park/{}"
 
