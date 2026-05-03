@@ -23,3 +23,4 @@ It’s easy to discover Virginia’s wild side with The Virginia Bird and Wildli
 <BR>18:32	2026-02-08	[W4DHW](https://qrz.com/db/W4DHW)	599	599	VA	14.015	20m	CW	[US-9935](https://pota.app/#/park/US-9935)
 <BR>12:46	2026-03-11	[AC4BT](https://qrz.com/db/AC4BT)	339	339	VA	7.0605	40m	CW	[US-9935](https://pota.app/#/park/US-9935)
 <BR>12:00	2026-04-04	[W4DHW](https://qrz.com/db/W4DHW)	339	339	VA	7.03	40m	CW	[US-9935](https://pota.app/#/park/US-9935)
+<BR>11:58	2026-05-03	[W4DHW](https://qrz.com/db/W4DHW)	599	599	VA	7.066	40m	CW	[US-9935](https://pota.app/#/park/US-9935)
